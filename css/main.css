@@ -51,7 +51,7 @@ body {
   weight: 3em;
   margin: 1em;
   margin-bottom: 2em;
-
+  position: fixed;
   /* float:right; */
 
   /* display: inline; */
