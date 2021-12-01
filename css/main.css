@@ -34,15 +34,12 @@ background: url('../img/bg_1_whole.png');
   border-radius: 15px;
 }
 
-/* #code::before{
+#code::before{
   content: "코드를 입력하세요";
   color: white;
   font-size: 2em;
-} */
-/* #code {
-  width: 20em;
-  margin: 2em;
-} */
+}
+
 #code_input {
   width: 20em;
 }
