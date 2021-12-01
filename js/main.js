@@ -1,7 +1,13 @@
 $(document).ready(function () {
   // when code is entered
-  console.log('ready');
+  console.log('ready22');
   // $('#code-form').submit(function(e){
+
+  $('#info-button').click(function(){
+    console.log('info-clicked');
+    $('#info-popup').load('./common/info.html');
+  });
+
   $('#code_button').click(function(e){
     e.preventDefault();
     var code = $('#code_input').val();
@@ -11,4 +17,10 @@ $(document).ready(function () {
     }
     console.log('done');
   });
+});
+
+
+
+$('.js-close-modal').click(function(){
+  $('.container').removeClass('modal-open');
 });
