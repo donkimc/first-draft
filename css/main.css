@@ -27,7 +27,7 @@ background: url('../img/bg_1_whole.png');
 #code {
   width: 20em;
   height: 3em;
-  /* opacity: 90%; */
+  opacity: 50%;
   background-color: rgba(15,80,120,1);
   text-align: center;
   margin: 2em;
@@ -67,6 +67,41 @@ background: url('../img/bg_1_whole.png');
   margin: 1em;
   margin-bottom: 2em; */
   /* position: fixed; */
+}
+
+.overlay {
+  display: none;
+  position:fixed;
+  z-index: 1;
+  left:0;
+  top:0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+  /* background-color: white; */
+
+}
+
+.overlay-content {
+  background-color: #f4f4f4;
+  margin: 0 0 0 30%;
+  padding: 20px;
+  width: 70%;
+  height: 20em;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.closeBtn {
+  color: #ccc;
+  float: right;
+  font-size: 30px;
+}
+
+.closeBtn:hover, .closeBtn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* .overlay {

@@ -1,11 +1,19 @@
 $(document).ready(function () {
   // when code is entered
-  console.log('ready22');
+  // console.log('ready22');
   // $('#code-form').submit(function(e){
 
+  // $('#info-button').click(function(){
+  //   console.log('info-clicked');
+  //   $('#info-popup').load('./common/info.html');
+  // });
+
   $('#info-button').click(function(){
-    console.log('info-clicked');
-    $('#info-popup').load('./common/info.html');
+    $('#info-overlay').css({display: "block"});
+  });
+
+  $('#closeBtn').click(function(){
+    $('#info-overlay').css({display: "none"});
   });
 
   $('#code_button').click(function(e){
@@ -21,6 +29,10 @@ $(document).ready(function () {
 
 
 
-$('.js-close-modal').click(function(){
-  $('.container').removeClass('modal-open');
-});
+// $('#info-button').click(function(){
+//   $('#info-overlay').css({display: "block"});
+// });
+//
+// $('#closeBtn').click(function(){
+//   $('#info-overlay').css({display: "none"});
+// });

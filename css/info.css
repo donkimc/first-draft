@@ -1,4 +1,4 @@
-.overlay {
+.modal {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -9,7 +9,7 @@
   visibility: hidden;
   opacity: 0;
 }
-.overlay:target {
+.modal:target {
   visibility: visible;
   opacity: 1;
 }
