@@ -22,9 +22,20 @@ $(document).ready(function () {
 
     if (code == '181818') {
       console.log('correct');
+      window.location.href = "./start.html";
+    }
+    else {
+      alert('Wrong password, Correct password is 181818.');
     }
     console.log('done');
   });
+
+  $('#start_button').click(function(e){
+    e.preventDefault();
+    alert('not implemented yet');
+  });
+
+
 });
 
 

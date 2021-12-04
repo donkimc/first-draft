@@ -24,10 +24,10 @@ background: url('../img/bg_1_whole.png');
   margin: 1em;
 }
 
-#code {
+.text-box {
   width: 20em;
-  height: 3em;
-  opacity: 50%;
+  height: auto;
+  /* opacity: 50%; */
   background-color: rgba(15,80,120,1);
   text-align: center;
   margin: 2em;
@@ -40,10 +40,14 @@ background: url('../img/bg_1_whole.png');
   font-size: 2em;
 }
 
+#start-game-img::before {
+  content: url('../img/gamestart.png')
+}
+
 #code_input {
   width: 20em;
 }
-#code_button {
+.blue_button {
   width: 8em;
   padding: 1px;
   margin: 2em;
@@ -85,23 +89,50 @@ background: url('../img/bg_1_whole.png');
 
 .overlay-content {
   background-color: #f4f4f4;
-  margin: 0 0 0 30%;
+  margin: 0 0 0 20%;
   padding: 20px;
-  width: 70%;
-  height: 20em;
+  width: 80%;
+  height: 25em;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 29%, rgba(203,243,249,1) 100%);
+
 }
 
 .closeBtn {
+  margin-left: 9em;
+  margin-bottom: 0.5em;
   color: #ccc;
-  float: right;
+  /* float: right; */
   font-size: 30px;
+
+
 }
+
+#closeBtn img {
+  float: right;
+  width: 2.5em;
+  height: 2.5em;
+}
+
 
 .closeBtn:hover, .closeBtn:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+.box-info {
+  border-radius: 10px;
+  border-color: grey;
+  border-style: dashed;
+  padding: 30px;
+  border-width: medium;
 }
 
 /* .overlay {
