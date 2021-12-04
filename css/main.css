@@ -1,12 +1,60 @@
-body {
+/* body { */
   /* background: url('../img/bg_start.svg'), linear-gradient(0deg, rgba(15,80,120,1) 10%, rgba(23,146,163,1) 100%); */
-background: url('../img/bg_1_whole.png');
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: center;
-  background-attachment: fixed;
+/* background: url('../img/bg_1_whole.png'); */
+  /* background-repeat: no-repeat; */
+  /* background-size: 100% auto; */
+  /* background-position: center; */
+  /* background-attachment: fixed; */
+
+/* }  */
+
+
+body {
+   /* display: flex; */
+   height:100vh;
+   /* top:-10px; */
+   bottom:0;
+   align-items:center;
+   background: url('../img/bg1_top.svg ');
+   background-position: relative;
+   background-size:cover;
+   /* background-position: center; */
+   background-repeat: no-repeat;
+   overflow:hidden;
 
 }
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.bg-container {
+    position: fixed;
+    width:calc(max(120%,330px));
+    height:calc(max(150px,35%));
+    bottom:0px;
+    right:0px;
+    left:-10px;
+    z-index:-2;
+
+}
+
+
+.bg-box {
+    width:100%;
+    height:100vh;
+    /* position:relative; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom fixed;
+    bottom:0px;
+    /* padding-top:calc(max(400px,50%)); */
+    z-index:-1;
+}
+
 
 .content {
   overflow: hidden;
