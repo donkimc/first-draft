@@ -139,7 +139,7 @@ body {
 
 .overlay-content {
   background-color: #f4f4f4;
-  margin: 0 0 0 calc(100vw - 25em);
+  margin: 0 0 0 0;
   padding: 20px;
   width: min(100%, 25em);
   height: min(80%,25em);
@@ -156,16 +156,15 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 29%, rgba(203,243,249,1)
 }
 
 .closeBtn {
-  margin-left: 9em;
+  margin-left: 18em;
   margin-bottom: 0.5em;
   color: #ccc;
+  /* overflow: hidden; */
   /* float: right; */
-  font-size: 30px;
-
-
+  /* font-size: 30px; */
 }
 
-#closeBtn img {
+#closeBtn {
   float: right;
   width: 2.5em;
   height: 2.5em;
@@ -182,7 +181,7 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 29%, rgba(203,243,249,1)
   border-radius: 10px;
   border-color: grey;
   border-style: dashed;
-  padding: 30px;
+  padding: 1em;
   border-width: medium;
 }
 
