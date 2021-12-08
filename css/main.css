@@ -10,7 +10,7 @@ body {
   height: 100vh;
   bottom: 0;
   align-items: center;
-  background: url('../img/bg1_top.svg ');
+  background: url('../img/bg_1_whole.png');
   background-position: relative;
   background-size: cover;
   background-repeat: no-repeat;
@@ -135,9 +135,10 @@ body {
 .overlay {
   display: none;
   position: fixed;
+
   z-index: 1;
-  left: 0;
-  top: 0;
+
+
   height: 100%;
   width: 100%;
   overflow: auto;
@@ -147,6 +148,7 @@ body {
 
 .overlay-content {
   background-color: #f4f4f4;
+  float: right;
   margin: 0 0 0 0;
   padding: 20px;
   width: min(100%, 25em);
@@ -159,12 +161,16 @@ body {
   border-radius: 10px;
   background: rgb(255, 255, 255);
   background: linear-gradient(180deg, rgba(255, 255, 255, 1) 29%, rgba(203, 243, 249, 1) 100%);
+  position: relative;
 }
 
 .closeBtn {
-  margin-left: 18em;
-  margin-bottom: 0.5em;
+  /* margin-left: 18em; */
+  /* margin-bottom: 0.5em; */
+  top:2em;
+  right: 2em;
   color: #ccc;
+  position: absolute;
   /* overflow: hidden; */
   /* float: right; */
   /* font-size: 30px; */
