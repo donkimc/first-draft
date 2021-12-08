@@ -17,6 +17,21 @@ body {
   overflow: hidden;
 }
 
+@font-face {
+    font-family: 'NanumSquareRoundEB'; /*a name to be used later*/
+    src: url('../fonts/NanumSquareRoundEB.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'NanumSquareRoundR'; /*a name to be used later*/
+    src: url('../fonts/NanumSquareRoundR.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'yangjinv09_ttf'; /*a name to be used later*/
+    src: url('../fonts/yangjinv09_ttf.ttf'); /*URL to font*/
+}
+
 .main {
   display: flex;
   align-items: center;
@@ -69,6 +84,7 @@ body {
   text-align: center;
   margin: 2em;
   border-radius: 15px;
+  font-family: yangjinv09_ttf;
 }
 
 /* .text-box img {
@@ -172,6 +188,11 @@ body {
   border-style: dashed;
   padding: 1em;
   border-width: medium;
+  font-family: 'NanumSquareRoundR';
+}
+
+.str {
+  font-family: 'NanumSquareRoundEB';
 }
 
 /* .overlay {
