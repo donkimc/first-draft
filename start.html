@@ -13,60 +13,58 @@
   <script src="https://kit.fontawesome.com/5bf6cd29fd.js" crossorigin="anonymous"></script>
 
 
-  <title>Document</title>
+  <title>루비팡의 모험</title>
   <link rel="stylesheet" href="./css/main.css">
-  <style>
-    /* body {
-      background-image: url('bg.png');
-    } */
-  </style>
 </head>
 <body>
-
+  <!-- background bottom image -->
   <div class="main">
-    <header id="info">
-        <a id="info-button"><img src="./img/icon/info.svg" alt=""></a>
-    </header>
-
-    <div id="info-overlay" class="overlay">
+    <!-- background bottom image -->
+    <div class="bg-container">
+      <div class="bg-box">
+        <img src="./img/bg1_bottom.svg">
+      </div>
+    </div>
+    <!-- information icon on the top right -->
+    <div class="info">
+      <a id="infoButton"><img src="./img/icon/info.svg" alt=""></a>
+    </div>
+    <!-- information modal page -->
+    <div id="infoOverlay" class="overlay">
       <div class="overlay-content">
-        <div class="closeBtn">
-          <!-- <a id="clostBtn">&times;</a> -->
+        <div class="close-button">
+          <!-- x button &times -->
           <a id='closeBtn'><img src="./img/icon/icon_delete.svg" alt=""></a>
         </div>
-        <div class="box-info">
-
+        <div class="box-description">
           <p>안녕하세요</p>
           <p><strong>래빗팡의 모험</strong>을 이용해주셔서 감사합니다.</p>
           <br>
           <table>
-          <tr>
-            <th>제작사 :</th>
-            <th><strong>주식회사 시티서커스 1 </strong></th>
-          </tr>
-          <tr>
-            <th>문의처 :</th>
-            <th><strong>email@citycircus.kr</strong></th>
-          </tr>
-          <tr>
-            <th></th>
-            <th><strong>070-8885-8812</strong></th>
-          </tr>
+            <tr>
+              <th>제작사 :</th>
+              <th><strong class='str'>주식회사 시티서커스</strong></th>
+            </tr>
+            <tr>
+              <th>문의처 :</th>
+              <th><strong class='str'>email@citycircus.kr</strong></th>
+            </tr>
+            <tr>
+              <th></th>
+              <th><strong class='str'>070-8885-8812</strong></th>
+            </tr>
           </table>
         </div>
 
       </div>
     </div>
-    <div class="content">
-      <img id='logo' src="./img/logo.svg" alt="">
-      <div class='text-box'>
-        <img id="start-game-img" src="./img/gamestart.png" alt="">
-        <!-- <div id="start-game-img"></div> -->
+    <div class="contents">
+      <img class='logo-image' src="./img/logo.svg" alt="">
+      <!-- <img id='logo' src="./img/logo.svg" alt=""> -->
+      <div class='shade-text-box'>
+        <img src="./img/gamestart.png" alt="">
       </div>
-      <!-- <img id='code' src="./img/entercode.png" alt=""> -->
-
-      <img id="start_button" class='blue_button' href="#popup1" src="./img/icon/icon_play.svg" alt="">
-
+      <img id="startBtn" class='start-button' src="./img/icon/icon_play.svg" alt="">
     </div>
   </div>
   <script src="./js/main.js"></script>

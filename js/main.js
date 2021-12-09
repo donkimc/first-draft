@@ -8,29 +8,32 @@ $(document).ready(function () {
   //   $('#info-popup').load('./common/info.html');
   // });
 
-  $('#info-button').click(function(){
-    $('#info-overlay').css({display: "block"});
+  var txtErr = "<p style='color:red; font-size: 0.8em; margin-bottom: -2em;'>코드를 잘못 입력 되었습니다. <br> 다시 확인하고 입력해 주세요.</p>";
+  $('#infoButton').click(function(){
+    $('#infoOverlay').css({display: "block"});
   });
 
   $('#closeBtn').click(function(){
-    $('#info-overlay').css({display: "none"});
+    $('#infoOverlay').css({display: "none"});
   });
 
-  $('#code_button').click(function(e){
+  $('#codeBtn').click(function(e){
     e.preventDefault();
-    var code = $('#code_input').val();
+    var code = $('#codeInput').val();
 
     if (code == '181818') {
       console.log('correct');
       window.location.href = "./start.html";
     }
     else {
-      alert('Wrong password, Correct password is 181818.');
+      // alert('Wrong password, Correct password is 181818.');
+      $('#codeError').html(txtErr);
+      setTimeout(function(){$('#codeError').html("")},3000);
     }
     console.log('done');
   });
 
-  $('#start_button').click(function(e){
+  $('#startBtn').click(function(e){
     e.preventDefault();
     alert('not implemented yet');
   });

@@ -1,3 +1,9 @@
+<!--
+authur don kim
+updated date Dec 9th 2021
+Main page of 루비팡의 모험
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,36 +19,31 @@
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/5bf6cd29fd.js" crossorigin="anonymous"></script>
 
-
-  <title>Document</title>
+  <title>루비팡의 모험</title>
   <link rel="stylesheet" href="./css/main.css">
-  <style>
-    /* body {
-      background-image: url('bg.png');
-    } */
-  </style>
 </head>
 
 <body>
-
+  <!-- background bottom image -->
   <div class="main">
+    <!-- background bottom image -->
     <div class="bg-container">
       <div class="bg-box">
         <img src="./img/bg1_bottom.svg">
       </div>
     </div>
-    <header id="info">
-      <a id="info-button"><img src="./img/icon/info.svg" alt=""></a>
-    </header>
-
-    <div id="info-overlay" class="overlay">
+    <!-- information icon on the top right -->
+    <div class="info">
+      <a id="infoButton"><img src="./img/icon/info.svg" alt=""></a>
+    </div>
+    <!-- information modal page -->
+    <div id="infoOverlay" class="overlay">
       <div class="overlay-content">
-        <div class="closeBtn">
-          <!-- <a id="clostBtn">&times;</a> -->
+        <div class="close-btn">
+          <!-- x button &times -->
           <a id='closeBtn'><img src="./img/icon/icon_delete.svg" alt=""></a>
         </div>
-        <div class="box-info">
-
+        <div class="box-description">
           <p>안녕하세요</p>
           <p><strong>래빗팡의 모험</strong>을 이용해주셔서 감사합니다.</p>
           <br>
@@ -61,18 +62,15 @@
             </tr>
           </table>
         </div>
-
       </div>
     </div>
-    <div class="content">
-      <img id='logo' src="./img/logo.svg" alt="">
-      <div class='text-box'>
-        <div id="code"></div>
-      </div>
-      <!-- <img id='code' src="./img/entercode.png" alt=""> -->
-      <input type="text" class="form-control" id="code_input" placeholder="코드">
-      <img id="code_button" class='blue_button' href="#popup1" src="./img/icon/icon_play.svg" alt="">
-
+    <!-- main contents includes: logo, code text box, code input and next button -->
+    <div class="contents">
+      <img class='logo-image' src="./img/logo.svg" alt="">
+      <div class='shade-text-box'><p>코드를 입력하세요</p></div>
+      <input type="text" class="form-control code-text-input" id="codeInput" placeholder="코드">
+      <div id="codeError"></div>
+      <img id="codeBtn" class='start-button' src="./img/icon/icon_play.svg" alt="">
     </div>
   </div>
   <script src="./js/main.js"></script>

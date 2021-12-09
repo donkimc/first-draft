@@ -1,21 +1,4 @@
-/* body { */
-/* background: url('../img/bg_start.svg'), linear-gradient(0deg, rgba(15,80,120,1) 10%, rgba(23,146,163,1) 100%); */
-/* background: url('../img/bg_1_whole.png'); */
-/* background-repeat: no-repeat; */
-/* background-size: 100% auto; */
-/* background-position: center; */
-/* background-attachment: fixed; */
-/* }  */
-body {
-  height: 100vh;
-  bottom: 0;
-  align-items: center;
-  background: url('../img/bg_1_whole.png');
-  background-position: relative;
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow: hidden;
-}
+/* declair local fonts */
 
 @font-face {
     font-family: 'NanumSquareRoundEB'; /*a name to be used later*/
@@ -30,6 +13,17 @@ body {
 @font-face {
     font-family: 'yangjinv09_ttf'; /*a name to be used later*/
     src: url('../fonts/yangjinv09_ttf.ttf'); /*URL to font*/
+}
+
+body {
+  height: 100vh;
+  bottom: 0;
+  align-items: center;
+  background: url('../img/bg_1_whole.png');
+  background-position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .main {
@@ -51,16 +45,28 @@ body {
 .bg-box {
   width: 100%;
   height: 100vh;
-  /* position:relative; */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom fixed;
   bottom: 0px;
-  /* padding-top:calc(max(400px,50%)); */
   z-index: -1;
 }
 
-.content {
+.info {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+}
+
+.info img {
+  float: right;
+  width: min(20vw, 5em);
+  cursor: pointer;
+}
+
+.contents {
   overflow: hidden;
   height: 100vh;
   display: flex;
@@ -70,13 +76,13 @@ body {
   padding: 1.5rem;
 }
 
-#logo {
+.logo-image {
   width: min(80%, 25em);
   padding-top: min(10%, 100px);
   margin: 1em;
 }
 
-.text-box {
+.shade-text-box {
   width: min(75%, 20em);
   height: auto;
   /* opacity: 50%; */
@@ -87,63 +93,36 @@ body {
   font-family: yangjinv09_ttf;
 }
 
-/* .text-box img {
-  width: min(75%, 20em);
-} */
-#start-game-img {
-  width: min(75%, 20em);
-}
-
-#code::before {
-  content: "코드를 입력하세요";
+.shade-text-box p {
   color: white;
+  padding-top: 0.4em;
   font-size: min(7vw, 2em);
 }
 
-/* #start-game-img::before {
-  content: url('../img/gamestart.png');
-} */
-#code_input {
+.shade-text-box img {
   width: min(75%, 20em);
 }
 
-.blue_button {
+.code-text-input {
+  width: min(75%, 20em);
+}
+
+.start-button {
   width: min(20vw, 8em);
   padding: 1px;
   margin: 2em;
+  cursor: pointer;
 }
 
-#info {
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-#info img {
-  float: right;
-  /* height: 5em; */
-  width: min(20vw, 5em);
-  /* height: 3em;
-  weight: 3em;
-  padding: 8px;
-  margin: 1em;
-  margin-bottom: 2em; */
-  /* position: fixed; */
-}
-
+/* modal popup css */
 .overlay {
   display: none;
   position: fixed;
-
   z-index: 1;
-
-
   height: 100%;
   width: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.5);
-  /* background-color: white; */
 }
 
 .overlay-content {
@@ -164,16 +143,11 @@ body {
   position: relative;
 }
 
-.closeBtn {
-  /* margin-left: 18em; */
-  /* margin-bottom: 0.5em; */
+.close-btn {
   top:2em;
   right: 2em;
   color: #ccc;
   position: absolute;
-  /* overflow: hidden; */
-  /* float: right; */
-  /* font-size: 30px; */
 }
 
 #closeBtn {
@@ -182,13 +156,13 @@ body {
   height: 2.5em;
 }
 
-.closeBtn:hover, .closeBtn:focus {
+.close-btn:hover, .close-btn:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
 }
 
-.box-info {
+.box-description {
   border-radius: 10px;
   border-color: grey;
   border-style: dashed;
@@ -200,52 +174,3 @@ body {
 .str {
   font-family: 'NanumSquareRoundEB';
 }
-
-/* .overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
-  visibility: hidden;
-  opacity: 0;
-}
-.overlay:target {
-  visibility: visible;
-  opacity: 1;
-}
-
-.popup {
-  margin: 70px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 5px;
-  width: 70%;
-  position: relative;
-  transition: all 5s ease-in-out;
-}
-
-.popup h2 {
-  margin-top: 0;
-  color: #333;
-  font-family: Tahoma, Arial, sans-serif;
-}
-.popup .close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
-}
-.popup .close:hover {
-  color: #06D85F;
-}
-.popup .content {
-  max-height: 30%;
-  overflow: auto;
-} */
