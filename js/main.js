@@ -35,7 +35,7 @@ $(document).ready(function () {
 
   $('#startBtn').click(function(e){
     e.preventDefault();
-    alert('not implemented yet');
+    window.location.href = "./stage1-1.html";
   });
 
 

@@ -1,5 +1,8 @@
 /* declair local fonts */
 
+/* @charset "UTF-8"; */
+@charset "EUC-KR";
+
 @font-face {
     font-family: 'NanumSquareRoundEB'; /*a name to be used later*/
     src: url('../fonts/NanumSquareRoundEB.ttf'); /*URL to font*/
@@ -15,16 +18,7 @@
     src: url('../fonts/yangjinv09_ttf.ttf'); /*URL to font*/
 }
 
-body {
-  height: 100vh;
-  bottom: 0;
-  align-items: center;
-  background: url('../img/bg_1_whole.png');
-  background-position: relative;
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow: hidden;
-}
+
 
 .main {
   display: flex;
@@ -55,18 +49,32 @@ body {
 .info {
   overflow: hidden;
   position: fixed;
-  top: 0;
+  top: 1em;
+  right: 1em;
   width: 100%;
 
 }
 
-.info img {
+.info-button {
   float: right;
-  width: min(20vw, 5em);
+  width: min(20vw, 3em);
   cursor: pointer;
 }
 
 .contents {
+  /* overflow: hidden; */
+  /* height: min(90vh, 700px); */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 auto;
+  padding: 1.5rem;
+  top: 200px;
+  /* min-height: 20vh; */
+}
+
+/* .contents {
   overflow: hidden;
   height: 100vh;
   display: flex;
@@ -74,12 +82,13 @@ body {
   align-items: center;
   flex: 1 auto;
   padding: 1.5rem;
-}
+} */
 
 .logo-image {
   width: min(80%, 25em);
   padding-top: min(10%, 100px);
   margin: 1em;
+
 }
 
 .shade-text-box {
@@ -88,14 +97,19 @@ body {
   /* opacity: 50%; */
   background-color: rgba(15, 80, 120, 1);
   text-align: center;
-  margin: 2em;
-  border-radius: 15px;
+  /* margin: auto; */
+  border-radius: 10px;
   font-family: yangjinv09_ttf;
+  letter-spacing: 0.2em;
+  margin: 2em;
 }
 
 .shade-text-box p {
   color: white;
-  padding-top: 0.4em;
+  text-align: center;
+  /* padding-top: 0.em; */
+  padding: 0;
+  margin: 0;
   font-size: min(7vw, 2em);
 }
 
@@ -105,13 +119,15 @@ body {
 
 .code-text-input {
   width: min(75%, 20em);
+
 }
 
 .start-button {
-  width: min(20vw, 8em);
+  width: min(20vw, 4em);
   padding: 1px;
   margin: 2em;
   cursor: pointer;
+
 }
 
 /* modal popup css */

@@ -1,0 +1,10 @@
+body {
+  height: 100vh;
+  bottom: 0;
+  align-items: center;
+  background: url('../img/bg_1_whole.png');
+  background-position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}

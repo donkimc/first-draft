@@ -1,0 +1,19 @@
+body {
+  height: 100vh;
+  bottom: 0;
+  align-items: center;
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 32%, rgba(152,190,223,1) 84%);
+  background-position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.read-info {
+  margin-top: min(20vw, 3em);
+  text-align: center;
+  font-family: yangjinv09_ttf;
+  font-size: 1.2em;
+  line-height: 0.5em;
+}
