@@ -52,13 +52,14 @@
   top: 1em;
   right: 1em;
   width: 100%;
-
+  filter: drop-shadow(0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5));
 }
 
 .info-button {
   float: right;
   width: min(20vw, 3em);
   cursor: pointer;
+
 }
 
 .contents {
@@ -70,7 +71,10 @@
   align-items: center;
   flex: 1 auto;
   padding: 1.5rem;
-  top: 200px;
+  justify-content: center;
+  /* justify-content: space-between;
+  gap: 2em; */
+  /* top: 0; */
   /* min-height: 20vh; */
 }
 
@@ -94,7 +98,7 @@
 .shade-text-box {
   width: min(75%, 20em);
   height: auto;
-  /* opacity: 50%; */
+  opacity: 90%;
   background-color: rgba(15, 80, 120, 1);
   text-align: center;
   /* margin: auto; */

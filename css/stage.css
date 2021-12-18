@@ -10,10 +10,29 @@ body {
   overflow: hidden;
 }
 
+.bg-bottom {
+  position: fixed;
+  width: 130%;
+  bottom: -5vh;
+  z-index: -1;
+}
+
+.bg-middle {
+  position: fixed;
+  width: 100%;
+  top: 10vh;
+  left: 30vw;
+  z-index: -2;
+}
+
 .read-info {
-  margin-top: min(20vw, 3em);
+  margin-top: min(30vw, 5em);
   text-align: center;
   font-family: yangjinv09_ttf;
-  font-size: 1.2em;
-  line-height: 0.5em;
+  font-size: min(5vw, 2em);
+  line-height: max(2vh,0.5em);
+}
+
+.stage-img {
+  width: min(60vw, 20em);
 }
