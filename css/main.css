@@ -18,8 +18,6 @@
     src: url('../fonts/yangjinv09_ttf.ttf'); /*URL to font*/
 }
 
-
-
 .main {
   display: flex;
   align-items: center;
@@ -59,12 +57,9 @@
   float: right;
   width: min(20vw, 3em);
   cursor: pointer;
-
 }
 
 .contents {
-  /* overflow: hidden; */
-  /* height: min(90vh, 700px); */
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -72,66 +67,6 @@
   flex: 1 auto;
   padding: 1.5rem;
   justify-content: center;
-  /* justify-content: space-between;
-  gap: 2em; */
-  /* top: 0; */
-  /* min-height: 20vh; */
-}
-
-/* .contents {
-  overflow: hidden;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1 auto;
-  padding: 1.5rem;
-} */
-
-.logo-image {
-  width: min(80%, 25em);
-  padding-top: min(10%, 100px);
-  margin: 1em;
-
-}
-
-.shade-text-box {
-  width: min(75%, 20em);
-  height: auto;
-  opacity: 90%;
-  background-color: rgba(15, 80, 120, 1);
-  text-align: center;
-  /* margin: auto; */
-  border-radius: 10px;
-  font-family: yangjinv09_ttf;
-  letter-spacing: 0.2em;
-  margin: 2em;
-}
-
-.shade-text-box p {
-  color: white;
-  text-align: center;
-  /* padding-top: 0.em; */
-  padding: 0;
-  margin: 0;
-  font-size: min(7vw, 2em);
-}
-
-.shade-text-box img {
-  width: min(75%, 20em);
-}
-
-.code-text-input {
-  width: min(75%, 20em);
-
-}
-
-.start-button {
-  width: min(20vw, 4em);
-  padding: 1px;
-  margin: 2em;
-  cursor: pointer;
-
 }
 
 /* modal popup css */
@@ -147,7 +82,8 @@
 
 .overlay-content {
   background-color: #f4f4f4;
-  float: right;
+
+  /* float: right; */
   margin: 0 0 0 0;
   padding: 20px;
   width: min(100%, 25em);
@@ -161,6 +97,12 @@
   background: rgb(255, 255, 255);
   background: linear-gradient(180deg, rgba(255, 255, 255, 1) 29%, rgba(203, 243, 249, 1) 100%);
   position: relative;
+}
+
+.info-overlay {
+  position: absolute;
+  top:0;
+  right: 0;
 }
 
 .close-btn {
@@ -189,6 +131,10 @@
   padding: 1em;
   border-width: medium;
   font-family: 'NanumSquareRoundR';
+}
+
+#codeError {
+  display: block;
 }
 
 .str {

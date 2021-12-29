@@ -23,7 +23,7 @@
   <div class="main">
     <!-- background bottom image -->
     <div class="bg-bottom">
-        <img src="./img/bg/bg_bottom3.svg">
+        <img src="./img/bg/bg_bottom4.svg">
     </div>
     <div class="bg-middle">
       <img src="./img/clip/stage1_middle.svg" alt="">
@@ -34,7 +34,7 @@
     </div>
     <!-- information modal page -->
     <div id="infoOverlay" class="overlay">
-      <div class="overlay-content">
+      <div class="overlay-content info-overlay">
         <div class="close-btn">
           <!-- x button &times -->
           <a id='closeBtn'><img src="./img/icon/icon_delete.svg" alt=""></a>
@@ -60,6 +60,29 @@
         </div>
       </div>
     </div>
+
+    <!-- hint modal page -->
+    <div id="hintOverlay" class="overlay">
+      <div class="overlay-content hint-overlay">
+        <div class="close-btn">
+          <!-- x button &times -->
+          <a id='hintCloseBtn'><img src="./img/icon/icon_delete.svg" alt=""></a>
+        </div>
+        <div class="img-top-hint">
+          <img src="./img/icon/icon_hint.svg" alt="">
+        </div>
+        <div class="img-bottom-hint">
+          <img src="./img/bg/bg_hinticon.svg" alt="">
+        </div>
+        <div class="box-description">
+          <p>향해일지에 적힌 시간을 날짜 순서대로</p>
+          <p>나열 후 조타륜에 적힌 시계 모양대로</p>
+          <p>시침, 분침, 초침을 대입해 보세요</p>
+          <br>
+        </div>
+      </div>
+    </div>
+
     <!-- main contents includes: logo, code text box, code input and next button -->
     <div class="contents">
       <div class="read-info">
@@ -84,11 +107,14 @@
       <div class='shade-text-box'><p>코드를 입력하세요</p></div>
       <input type="text" class="form-control code-text-input" id="codeInput" placeholder="코드">
       <div id="codeError"></div> -->
-      <input type="text" class="form-control" placeholder="답">
-      <img id="codeBtn" class='start-button' src="./img/icon/icon_play.svg" alt="">
+      <!-- <div class='answer-div'> -->
+        <input id="answer1" type="text" class="form-control answer-input" placeholder="정답 입력">
+        <img id="codeBtn" class='next-button answer-e' src="./img/icon/icon_play.svg" alt="">
+      <!-- </div> -->
     </div>
   </div>
   <script src="./js/main.js"></script>
+  <script src="./js/stage.js"></script>
 </body>
 
 </html>
