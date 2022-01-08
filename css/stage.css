@@ -40,7 +40,7 @@ body {
 .next-button {
   width: min(20vw, 3em);
   padding: 1px;
-  margin: 1em;
+  margin: 0.5em;
   cursor: pointer;
   /* margin-left: auto; */
   margin-left: min(50vw, 18em);
