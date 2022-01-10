@@ -29,6 +29,7 @@ $(document).ready(function () {
       // alert('Wrong password, Correct password is 181818.');
       $('#codeError').html(txtErr);
       setTimeout(function(){$('#codeError').html("")},3000);
+      $("#codeInput").val("")
     }
     console.log('done');
   });

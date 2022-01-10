@@ -44,13 +44,17 @@
   z-index: -1;
 }
 
+.btn-shadow {
+  filter: drop-shadow(0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5));
+}
+
 .info {
   overflow: hidden;
   position: fixed;
   top: 1em;
   right: 1em;
   width: 100%;
-  filter: drop-shadow(0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5));
+
 }
 
 .info-button {
