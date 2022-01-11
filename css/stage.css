@@ -106,14 +106,15 @@ body {
 
 .img-top-hint {
   position: absolute;
-  top: 6vh;
+  margin-botom: -10px;
+  top: 5em;
   left: 2em;
-  width: 40vw;
+  width: 8em;
 }
 
 .img-bottom-hint {
   position: absolute;
-  bottom: 5vh;
+  bottom: 3em;
   right: 2em;
-  width: 25vw;
+  width: 6em;
 }
