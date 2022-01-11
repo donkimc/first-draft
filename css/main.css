@@ -18,11 +18,6 @@
     src: url('../fonts/yangjinv09_ttf.ttf'); /*URL to font*/
 }
 
-/* .main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
 
 .bg-container {
   position: fixed;
@@ -94,7 +89,7 @@
   /* width: min(100%, 25em);
   height: min(80%, 25em); */
   width: min(100%, 25em);
-  height: 25em;
+  height: 25em;;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
@@ -132,8 +127,8 @@
 }
 
 .box-description {
-  width: 80vw;
-  height: 40vh;
+  width: 22em;
+  height: 16em;
   border-radius: 10px;
   border-color: grey;
   border-style: dashed;
