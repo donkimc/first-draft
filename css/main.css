@@ -132,6 +132,8 @@
 }
 
 .box-description {
+  width: 80vw;
+  height: 40vh;
   border-radius: 10px;
   border-color: grey;
   border-style: dashed;

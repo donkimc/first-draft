@@ -6,6 +6,7 @@ $(document).ready(function () {
 
     if (asw == 'LILY') {
       console.log('correct');
+      window.location.href = "./stage2-1.html";
     } else {
       $('#hintOverlay').css({display: "block"});
     }

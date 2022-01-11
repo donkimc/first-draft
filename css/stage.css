@@ -106,8 +106,8 @@ body {
 
 .img-top-hint {
   position: absolute;
-  margin-botom: -10px;
-  top: 5em;
+  /* margin-botom: -10px; */
+  top: 2.5em;
   left: 2em;
   width: 8em;
 }
@@ -117,4 +117,13 @@ body {
   bottom: 3em;
   right: 2em;
   width: 6em;
+}
+
+.sml-font {
+  font-size: 0.8em;
+  font-family: 'NanumSquareRoundR'
+}
+
+li{
+    margin-top: 1.5em;
 }

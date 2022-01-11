@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/5bf6cd29fd.js" crossorigin="anonymous"></script>
+
+  <title>루비팡의 모험</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/stage.css">
+</head>
+
+<body>
+    <!-- background bottom image -->
+    <div class="bg-bottom">
+        <img src="./img/bg/bg_bottom5.svg">
+    </div>
+    <!-- information icon on the top right -->
+    <div class="info">
+      <a id="infoButton" class='info-button'><img src="./img/icon/icon_info.svg" alt=""></a>
+    </div>
+    <!-- information modal page -->
+    <div id="infoOverlay" class="overlay">
+      <div class="overlay-content info-overlay">
+        <div class="close-btn">
+          <!-- x button &times -->
+          <a id='closeBtn'><img src="./img/icon/icon_delete.svg" alt=""></a>
+        </div>
+        <div class="box-description">
+          <p>안녕하세요</p>
+          <p><strong>래빗팡의 모험</strong>을 이용해주셔서 감사합니다.</p>
+          <br>
+          <table>
+            <tr>
+              <th>제작사 :</th>
+              <th><strong class='str'>주식회사 시티서커스</strong></th>
+            </tr>
+            <tr>
+              <th>문의처 :</th>
+              <th><strong class='str'>email@citycircus.kr</strong></th>
+            </tr>
+            <tr>
+              <th></th>
+              <th><strong class='str'>070-8885-8812</strong></th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- main contents includes: logo, code text box, code input and next button -->
+    <div class="contents">
+      <div class="read-info">
+      <p>휴...안전히 용궁역 입구에 도착했다.</p>
+      <p>그런데 주변이 어수선하다.</p>
+      <p>해당 그림에 대한 기사를 읽어보자</p>
+      </div>
+      <img class='stage-img' src="./img/stage2/sta-2-1.jpeg" alt="">
+      <div class="read-info">
+      <p>바다생물로 변장하는 도구를 찾아</p>
+      <p>용궁행 급행열차를 타야겠다.</p>
+      </div>
+      <a class='next-button' href="stage2-2.html">
+        <img src="./img/icon/icon_play.svg" alt="">
+      </a>
+    </div>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
