@@ -53,6 +53,7 @@ body {
 
 }
 .answer-input {
+  width: min(75%, 20em);
   text-align:center;
 }
 
