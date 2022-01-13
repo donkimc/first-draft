@@ -43,6 +43,10 @@
   filter: drop-shadow(0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5));
 }
 
+.sml-shadow {
+  filter: drop-shadow(0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.5));
+}
+
 .info {
   overflow: hidden;
   position: fixed;

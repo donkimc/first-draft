@@ -27,34 +27,14 @@
       <img src="./img/clip/stage1_middle.svg" alt="">
     </div>
     <!-- information icon on the top right -->
-    <div class="info">
+    <div class="info sml-shadow">
       <a id="infoButton" class='info-button'><img src="./img/icon/icon_info.svg" alt=""></a>
     </div>
     <!-- information modal page -->
     <div id="infoModal"></div>
 
     <!-- hint modal page -->
-    <div id="hintOverlay" class="overlay">
-      <div class="overlay-content hint-overlay">
-        <div class="close-btn">
-          <!-- x button &times -->
-          <a id='hintCloseBtn'><img src="./img/icon/icon_delete.svg" alt=""></a>
-        </div>
-        <div class="img-top-hint">
-          <img src="./img/icon/icon_hint.svg" alt="">
-        </div>
-        <div class="img-bottom-hint">
-          <img src="./img/bg/bg_hinticon.svg" alt="">
-        </div>
-        <div class="box-description">
-          <p>향해일지에 적힌 시간을 날짜 순서대로</p>
-          <p>나열 후 조타륜에 적힌 시계 모양대로</p>
-          <p>시침, 분침, 초침을 대입해 보세요</p>
-          <br>
-        </div>
-      </div>
-    </div>
-
+    
     <!-- main contents includes: logo, code text box, code input and next button -->
     <div class="contents">
       <div class="read-info">
@@ -66,10 +46,10 @@
         <p class="sml-font" style='color: red;'>문제의 정답을 입력해 주셔야 합니다.</p>
         <p class="sml-font" style='color: red;'>그리고 다시 지금 페이지로 넘어와 </p>
         <p class="sml-font" style='color: red;'>다음페이지로 이동하세요</p>
-        <br>
       </div>
-      <img class='stage-img' src="./img/stage3/sta-3-2.jpg" alt="">
+      <img class='stage-img sml-shadow' src="./img/stage3/sta-3-2.jpg" alt="">
       <a href="http://dev.sherlock-holmes.co.kr/test_city_circus.heitu">연결된 페이지</a>
+      <a id="answer" value=2></a>
       <!-- <input id="answer" value=2 oninput="this.value = this.value.toUpperCase();" type="text" class="form-control answer-input" placeholder="정답 입력"> -->
       <img id="codeBtn" class='next-button answer-e' src="./img/icon/icon_play.svg" alt="">
     </div>
