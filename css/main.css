@@ -131,8 +131,8 @@
 }
 
 .box-description {
-  width: min(90vw,22em);
-  height: 18em;
+  width: 20em;
+  height: 17em;
   border-radius: 10px;
   border-color: grey;
   border-style: dashed;
