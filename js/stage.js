@@ -3,7 +3,7 @@ $(document).ready(function () {
   $('#codeBtn').click(function(e){
     e.preventDefault();
     // page_index variable - stage_1 value is 0 and stage_2 value is 1 etc.
-    var page_index=$("#answer").attr("value");
+    var page_index=$("#answer").attr("index");
     console.log(page_index);
     $.getJSON("./answers.json", function(data) {
       console.log('clicked');
