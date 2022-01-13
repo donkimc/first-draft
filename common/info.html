@@ -1,58 +1,29 @@
-<!-- <img src="./img/icon/info.svc" alt=""> -->
 
-<!-- <style>
-/* body {font-family: Arial, Helvetica, sans-serif;} */
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-</style> -->
-
-<link rel="stylesheet" href="./css/info.css">
-
-<div class="popup">
-  <a class="close" href="#">&times;</a>
-  <div class="contents">
-    <p>안녕하세요</p>
-    <p>래빗팡의 모험을 이용해주셔서 감사합니다.</p>
-    <p> </p>
-    <p>제작사: 주식회사 시티서커스</p>
-    <p>문의처: email@citycircus.kr</p>
-    <p>070-8885-8812</p>
+<div id="infoOverlay" class="overlay">
+  <div class="overlay-content info-overlay">
+    <div class="close-btn">
+      <!-- x button &times -->
+      <a id='closeBtn'><img src="./img/icon/icon_delete.svg" alt=""></a>
+    </div>
+    <div class="box-description">
+      <p>안녕하세요</p>
+      <p><strong>래빗팡의 모험</strong>을 이용해주셔서 감사합니다.</p>
+      <br>
+      <table>
+        <tr>
+          <th>제작사 :</th>
+          <th><strong class='str'>주식회사 시티서커스</strong></th>
+        </tr>
+        <tr>
+          <th>문의처 :</th>
+          <th><strong class='str'>email@citycircus.kr</strong></th>
+        </tr>
+        <tr>
+          <th></th>
+          <th><strong class='str'>070-8885-8812</strong></th>
+        </tr>
+      </table>
+    </div>
   </div>
 </div>

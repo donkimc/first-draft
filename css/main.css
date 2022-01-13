@@ -108,8 +108,8 @@
 }
 
 .close-btn {
-  top:2em;
-  right: 2em;
+  top:2vh;
+  right: 3vw;
   color: #ccc;
   position: absolute;
 }

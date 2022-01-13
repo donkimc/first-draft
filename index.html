@@ -37,33 +37,9 @@ Main page of 루비팡의 모험
       <a id="infoButton" class='info-button'><img src="./img/icon/icon_info.svg" alt=""></a>
     </div>
     <!-- information modal page -->
-    <div id="infoOverlay" class="overlay">
-      <div class="overlay-content info-overlay">
-        <div class="close-btn">
-          <!-- x button &times -->
-          <a id='closeBtn'><img src="./img/icon/icon_delete.svg" alt=""></a>
-        </div>
-        <div class="box-description">
-          <p>안녕하세요</p>
-          <p><strong>래빗팡의 모험</strong>을 이용해주셔서 감사합니다.</p>
-          <br>
-          <table>
-            <tr>
-              <th>제작사 :</th>
-              <th><strong class='str'>주식회사 시티서커스</strong></th>
-            </tr>
-            <tr>
-              <th>문의처 :</th>
-              <th><strong class='str'>email@citycircus.kr</strong></th>
-            </tr>
-            <tr>
-              <th></th>
-              <th><strong class='str'>070-8885-8812</strong></th>
-            </tr>
-          </table>
-        </div>
-      </div>
-    </div>
+    <div id="infoModal"></div>
+  
+
     <!-- main contents includes: logo, code text box, code input and next button -->
     <div class="contents">
       <img class='logo-image' src="./img/logo.svg" alt="">
@@ -73,6 +49,7 @@ Main page of 루비팡의 모험
       <div id="codeError"></div>
     </div>
   <script src="./js/main.js"></script>
+  <script src="./js/info.js"></script>
 </body>
 
 </html>
