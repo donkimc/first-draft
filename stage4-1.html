@@ -1,1 +1,92 @@
-<h1>under construction</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/5bf6cd29fd.js" crossorigin="anonymous"></script>
+
+  <title>루비팡의 모험</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/stage.css">
+</head>
+
+<body>
+    <!-- background bottom image -->
+    <div class="bg-bottom">
+        <img src="./img/bg/bg_bottom4.svg">
+    </div>
+    <!-- <div class="bg-middle">
+      <img src="./img/clip/stage1_middle.svg" alt="">
+    </div> -->
+    <!-- information icon on the top right -->
+    <div class="info sml-shadow">
+      <a id="infoButton" class='info-button'><img src="./img/icon/icon_info.svg" alt=""></a>
+    </div>
+    <!-- information modal page -->
+    <div id="infoModal"></div>
+
+    <!-- hint modal page -->
+    <div id="hintOverlay" class="overlay">
+      <div class="overlay-content hint-overlay">
+        <div class="close-btn">
+          <!-- x button &times -->
+          <a id='hintCloseBtn'><img src="./img/icon/icon_delete.svg" alt=""></a>
+        </div>
+        <div class="img-top-hint">
+          <img src="./img/icon/icon_hint.svg" alt="">
+        </div>
+        <div class="img-bottom-hint">
+          <img src="./img/bg/bg_hinticon.svg" alt="">
+        </div>
+        <div class="box-description">
+          <p>흰색책은 자음 ㅇ, 검은색 책은 모음중 ㅡ,</p>
+          <p>녹색책은 모음 중 ㅣ 를 의미합니다.</p>
+          <p>그리고 누워져 있는 책은 모음 역시</p>
+          <p>같은 방향으로 눕혀주시면 됩니다.</p>
+          <p style='color: red;'>* 알파벳 A를 한글로 써보세요.</p>
+          <br>
+        </div>
+      </div>
+    </div>
+
+    <!-- hint modal page -->
+    <div id="ticketOverlay" class="overlay">
+      <div class="overlay-content ticket-overlay">
+        <!-- <div class="close-btn"> -->
+          <!-- x button &times -->
+          <!-- <a id='hintCloseBtn'><img src="./img/icon/icon_delete.svg" alt=""></a> -->
+        <!-- </div> -->
+
+        <img class='stage-img' src="./img/stage4/sta-4-2.png" alt="">
+        <img id="ticketNextBtn" class='next-button answer-e' src="./img/icon/icon_play.svg" alt="">
+      </div>
+    </div>
+
+
+    <!-- main contents includes: logo, code text box, code input and next button -->
+    <div class="contents">
+      <div class="read-info">
+      <p>아래의 그림을 참고하여,</p>
+      <p>열린 상자 안에 놓인 책의 종류를</p>
+      <p>확인하고, 그것이 뜻하는 의미를</p>
+      <p>파악해 용궁행 티켓을 획득하라!</p>
+      <br>
+      </div>
+      <img class='stage-img sml-shadow' src="./img/stage4/sta-4-1.jpg" alt="">
+      <br>
+      <input id="answer" index=3 oninput="this.value = this.value.toUpperCase();" type="text" class="form-control answer-input" placeholder="정답 입력">
+      <img id="codeBtn" class='next-button answer-e' src="./img/icon/icon_play.svg" alt="">
+    </div>
+  <script src="./js/info.js"></script>
+  <script src="./js/stage.js"></script>
+</body>
+
+</html>

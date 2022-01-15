@@ -57,9 +57,6 @@ body {
   text-align:center;
 }
 
-
-
-
 /* hint modal popup css */
 .overlay {
   display: none;
@@ -75,6 +72,16 @@ body {
   position: absolute;
     bottom: 0;
     right: 0;
+}
+
+.ticket-overlay {
+  position: absolute;
+  left: 50%;
+  /* top: 50%; */
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* transition: all .5s ease-in-out; /*make it smooth*/ */
+  transition: all .4s;
 }
 
 .close-btn {
