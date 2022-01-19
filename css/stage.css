@@ -60,12 +60,18 @@ body {
 /* hint modal popup css */
 .overlay {
   display: none;
-  position: fixed;
+  /* position: fixed; */
+
   z-index: 1;
   height: 100%;
   width: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.overlay:target {
+  display: block;
 }
 
 .hint-overlay {
@@ -76,12 +82,22 @@ body {
 
 .ticket-overlay {
   position: absolute;
+  top: 100%;
   left: 50%;
+  transform: translate(-50%, -100%);
   /* top: 50%; */
-  top: 50%;
-  transform: translate(-50%, -50%);
-  /* transition: all .5s ease-in-out; /*make it smooth*/ */
-  transition: all .4s;
+  /* top: 50%; */
+
+}
+
+.ticket-ani {
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  from {width: 10%;}
+  to {width: 70%;}
 }
 
 .close-btn {
