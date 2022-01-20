@@ -22,7 +22,26 @@ body {
   width: 100%;
   top: 10vh;
   left: 30vw;
+  z-index: -3;
+}
+
+.bg-center {
+  position: fixed;
+  width: 3em;
+  top: 10vh;
+  left: 30vw;
   z-index: -2;
+}
+
+.run-fish {
+  animation: fish 10s infinite;
+}
+
+@keyframes fish {
+  0% {transform: translateX(50em);}
+  50% {transform: translateX(0em);}
+  51% {transform: scaleX(-1);}
+  100% {transform: translateX(50em) scaleX(-1);}
 }
 
 .read-info {
