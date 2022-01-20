@@ -91,6 +91,7 @@ body {
 }
 
 .ticket-ani {
+  width: 70%;
   animation-name: example;
   animation-duration: 4s;
 }
