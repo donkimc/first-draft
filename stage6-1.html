@@ -23,7 +23,7 @@
     <div class="bg-bottom">
         <img src="./img/bg/bg_bottom4.svg">
     </div>
-    
+
     <div class="info sml-shadow">
       <a id="infoButton" class='info-button'><img src="./img/icon/icon_info.svg" alt=""></a>
     </div>
@@ -44,31 +44,39 @@
           <img src="./img/bg/bg_hinticon.svg" alt="">
         </div>
         <div class="box-description">
-          <p>정답은 의자입니다.</p>
+          <p>정답은 산호입니다.</p>
           <br>
         </div>
+      </div>
+    </div>
+
+    <!-- ticket modal page -->
+    <div id="dangerOverlay" class="overlay">
+      <div class="overlay-content danger-overlay">
+        <div class="read-info">
+          <p>어딜가려구,</p>
+          <p>우리가 정말 수순히 보내줄 줄 알았어?</p>
+          <p>(퍽)</p>
+        </div>
+        <!-- <img class='stage-img' src="./img/stage4/sta-4-2.png" alt=""> -->
+
+        <img id="dangerNextBtn" class='next-button button-loc' src="./img/icon/icon_play.svg" alt="">
       </div>
     </div>
 
     <!-- main contents includes: logo, code text box, code input and next button -->
     <div class="contents">
       <div class="read-info">
-        <p>기차에서 내려 생명의 정수가 있을 곳을</p>
-        <p>탐색하던 도중, 골목길에서 돌연변이 바다</p>
-        <p>생물들이 내 앞을 막아서며 말했다.</p>
+        <p>흠, 제법이군</p>
+        <p>어디 이것도 맞출 수 있나 볼까?</p>
         <br>
-        <p>-<p>
-        <p>"우리가 내는 문제를 풀어야 이곳을</p>
-        <p>지나갈 수 있다. 두 가지 문제를 내지.</p>
-        <p>어디 한번 맞춰봐!""</p>
         <br>
-        <p class="sml-font" style='color: red;'>* 골목길이 그려진 큐브상자 앞으로 가서 </p>
-        <p class="sml-font" style='color: red;'>돌연변이들이 주시하고 있는</p>
-        <p class="sml-font" style='color: red;'>물체의 명칭을 알아맞춰보세요. </p>
+        <br>
       </div>
       <br>
-      <input id="answer" index=4 oninput="this.value = this.value.toUpperCase();" type="text" class="form-control answer-input" placeholder="정답 입력">
-      <img id="codeBtn" class='next-button' src="./img/icon/icon_play.svg" alt="">
+      <input id="answer" index=5 oninput="this.value = this.value.toUpperCase();" type="text" class="form-control answer-input" placeholder="정답 입력">
+      <img  class='next-button' src="./img/icon/icon_play.svg" alt="">
+      <!-- <img id="codeBtn" class='next-button' src="./img/icon/icon_play.svg" alt=""> -->
     </div>
   <script src="./js/info.js"></script>
   <script src="./js/stage.js"></script>
