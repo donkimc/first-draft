@@ -52,9 +52,7 @@ body {
   line-height: max(1.5vh,0.5em);
 }
 
-.stage-img {
-  width: min(60vw, 20em);
-}
+
 
 .next-button {
   width: min(20vw, 3em);
@@ -115,24 +113,46 @@ body {
 }
 
 .danger-overlay {
-  background-image: url('./img/stage6/sta-6-1.png')
+  background-image: url('../img/stage6/sta-6-1.png');
   position: absolute;
   top: 100%;
   left: 50%;
   transform: translate(-50%, -100%);
 }
 
+.stage-img {
+  width: min(70vw, 30em);
+}
+
+
+
+
+
 .ticket-ani {
-  width: 70%;
+  position: absoute;
+  width: 90%;
   animation-name: example;
   animation-duration: 4s;
 }
 
-@keyframes example {
-  from {width: 10%;}
-  to {width: 70%;}
+.stamp-ani {
+  position: absolute;
+  width: 40%;
+  top: 20%;
+  animation-name: stamp;
+  animation-duration: 4s;
 }
 
+@keyframes example {
+  0% {width: 10%;}
+  100% {width: 90%;}
+}
+
+@keyframes stamp {
+  0% {opacity: 0;}
+  90% {opacity: 0;}
+  100% {opacity: 0.4;}
+}
 .close-btn {
   top:2vh;
   right: 3vw;
