@@ -102,11 +102,12 @@
   align-items: center;
   border-radius: 10px;
   background: rgb(255, 255, 255);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 29%, rgba(203, 243, 249, 1) 100%);
+
   position: relative;
 }
 
 .info-overlay {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 29%, rgba(203, 243, 249, 1) 100%);
   position: absolute;
   top:0;
   right: 0;
