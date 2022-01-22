@@ -43,14 +43,14 @@
         <div class="img-bottom-hint">
           <img src="./img/bg/bg_hinticon.svg" alt="">
         </div>
-        <div class="box-description">
+        <div class="box-description box-center">
           <p>정답은 산호입니다.</p>
           <br>
         </div>
       </div>
     </div>
 
-    <!-- ticket modal page -->
+    <!-- danger modal page -->
     <div id="dangerOverlay" class="overlay">
       <div class="overlay-content danger-overlay">
         <div class="read-info">
@@ -60,7 +60,7 @@
         </div>
         <!-- <img class='stage-img' src="./img/stage4/sta-4-2.png" alt=""> -->
 
-        <img id="dangerNextBtn" class='next-button button-loc' src="./img/icon/icon_play.svg" alt="">
+        <img id="dangerBtn" class='next-button button-loc' src="./img/icon/icon_play.svg" alt="">
       </div>
     </div>
 
@@ -75,7 +75,7 @@
       </div>
       <br>
       <input id="answer" index=5 oninput="this.value = this.value.toUpperCase();" type="text" class="form-control answer-input" placeholder="정답 입력">
-      <img  class='next-button' src="./img/icon/icon_play.svg" alt="">
+      <img  id="codeBtn" class='next-button' src="./img/icon/icon_play.svg" alt="">
       <!-- <img id="codeBtn" class='next-button' src="./img/icon/icon_play.svg" alt=""> -->
     </div>
   <script src="./js/info.js"></script>

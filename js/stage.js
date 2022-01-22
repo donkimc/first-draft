@@ -4,7 +4,6 @@ $(document).ready(function () {
     e.preventDefault();
     // page_index variable - stage_1 value is 0 and stage_2 value is 1 etc.
     var page_index=$("#answer").attr("index");
-    console.log(page_index);
     $.getJSON("./answers.json", function(data) {
       // console.log('clicked');
       // test
@@ -14,9 +13,13 @@ $(document).ready(function () {
       // console.log(ans);
       if ($('#answer').val() == data.answers[page_index].answer) {
         console.log('correct');
+        //stage 4
         if (page_index == 3) {
-
           $('#ticketOverlay').css({display: "block"});
+        }
+        // stage 6
+        else if (page_index == 5) {
+          $('#dangerOverlay').css({display: "block"});
         } else {
           window.location.href = "./"+data.answers[page_index].page;
         }
@@ -30,13 +33,23 @@ $(document).ready(function () {
     $('#hintOverlay').css({display: "none"});
   });
 
+  // stage 4
   $('#ticketNextBtn').click(function(){
     $.getJSON("./answers.json", function(data) {
       var page_index=$("#answer").attr("index");
-      console.log(page_index);
       $('#ticketOverlay').css({display: "none"});
       window.location.href = "./"+data.answers[page_index].page;
     });
   });
+
+  // stage 6
+  $('#dangerBtn').click(function(){
+    $.getJSON("./answers.json", function(data) {
+      var page_index=$("#answer").attr("index");
+      $('#dangerOverlay').css({display: "none"});
+      window.location.href = "./"+data.answers[page_index].page;
+    });
+  });
+
 
 });

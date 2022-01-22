@@ -114,6 +114,11 @@ body {
 
 .danger-overlay {
   background-image: url('../img/stage6/sta-6-1.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: #383838;
+  color: red;
+  font-style: oblique;
   position: absolute;
   top: 100%;
   left: 50%;
@@ -121,12 +126,8 @@ body {
 }
 
 .stage-img {
-  width: min(70vw, 30em);
+  width: min(60vw, 25em);
 }
-
-
-
-
 
 .ticket-ani {
   position: absoute;
@@ -172,19 +173,11 @@ body {
   cursor: pointer;
 }
 
-.box-description {
-  border-radius: 10px;
-  border-color: grey;
-  border-style: dashed;
-  padding: 1em;
-  border-width: medium;
-  font-family: 'NanumSquareRoundR';
-
+.box-center {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 
 .img-top-hint {
