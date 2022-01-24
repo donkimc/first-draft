@@ -44,10 +44,17 @@ $(document).ready(function () {
 
   // stage 6
   $('#dangerBtn').click(function(){
+    console.log('1');
     $.getJSON("./answers.json", function(data) {
       var page_index=$("#answer").attr("index");
       $('#dangerOverlay').css({display: "none"});
-      window.location.href = "./"+data.answers[page_index].page;
+
+      $('#dotDisplay').css({display: "flex"});
+
+      setTimeout(function(){
+        window.location.href = "./"+data.answers[page_index].page;
+        console.log('2');
+      },4000);
     });
   });
 
