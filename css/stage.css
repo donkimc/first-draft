@@ -1,21 +1,43 @@
+
 body {
   height: 100vh;
   bottom: 0;
   align-items: center;
   background: rgb(255,255,255);
-  background: linear-gradient(180deg, rgba(255,255,255,1) 32%, rgba(152,190,223,1) 84%);
+  /* background: linear-gradient(180deg, rgba(255,255,255,1) 32%, rgba(152,190,223,1) 84%);
   background-position: relative;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+
+
   overflow: hidden;
 }
 
-.bg-bottom {
+.bg-1 {
+  background: url('../img/bg/bg_bottom5.svg') ,linear-gradient(180deg, rgba(255,255,255,1) 32%, rgba(152,190,223,1) 84%);
+  background-position: center bottom, center 0px;
+  background-size: 100%, cover;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.bg-2 {
+  background: url('../img/bg/bg_bottom4.svg') ,linear-gradient(180deg, rgba(255,255,255,1) 32%, rgba(152,190,223,1) 84%);
+  background-position: center bottom, center 0px;
+  background-size: 100%, cover;
+  background-repeat: no-repeat, no-repeat;
+}
+
+
+.filter {
+  backdrop-filter: brightness(30%);
+}
+
+/* .bg-bottom {
   position: fixed;
   width: 100%;
   bottom: -5vh;
   z-index: -1;
-}
+} */
 
 .bg-middle {
   position: fixed;
@@ -23,6 +45,7 @@ body {
   top: 10vh;
   left: 30vw;
   z-index: -3;
+
 }
 
 .bg-center {
@@ -31,6 +54,7 @@ body {
   top: 10vh;
   left: 30vw;
   z-index: -2;
+
 }
 
 .run-fish {
@@ -52,6 +76,9 @@ body {
   line-height: max(1.5vh,0.5em);
 }
 
+.grey-color {
+  color: #DCDCDC;
+}
 
 
 .next-button {

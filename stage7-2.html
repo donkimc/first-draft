@@ -18,17 +18,8 @@
   <link rel="stylesheet" href="./css/stage.css">
 </head>
 
-<body class='bg-2'>
-    <!-- background bottom image -->
-    <!-- <div class="bg-bottom">
-        <img src="./img/bg/bg_bottom4.svg">
-    </div> -->
-    <div class="bg-middle">
-      <img src="./img/clip/stage1_middle.svg" alt="">
-    </div>
-    <div class="bg-center">
-      <img class='run-fish' src="./img/clip/fish1.svg" alt="">
-    </div>
+<body class='bg-2 filter'>
+
     <!-- information icon on the top right -->
     <div class="info sml-shadow">
       <a id="infoButton" class='info-button'><img src="./img/icon/icon_info.svg" alt=""></a>
@@ -50,35 +41,22 @@
           <img src="./img/bg/bg_hinticon.svg" alt="">
         </div>
         <div class="box-description">
-          <p>향해일지에 적힌 시간을 날짜 순서대로</p>
-          <p>나열 후 조타륜에 적힌 시계 모양대로</p>
-          <p>시침, 분침, 초침을 대입해 보세요</p>
-          <br>
+          <p>별의 '710-17'이 의미하는 것은</p>
+          <p>별의 '기억'입니다.</p>
         </div>
       </div>
     </div>
-
     <!-- main contents includes: logo, code text box, code input and next button -->
     <div class="contents">
-      <div class="read-info">
-      <p>생명의 정수를 구해야겠다.</p>
-      <br>
-      <p>배가 부서져 있으니</p>
-      <p>용궁으로 갈 수 있도록</p>
-      <p>기차를 타야겠다.</p>
-      <br>
-      <p>그런데 기차에 시동이 걸리지 않아.</p>
-      <br>
-      <p>저쪽에 망가진 조타륜과</p>
-      <p>누군가 일부러 날개의 항해일지를</p>
-      <p>흩뿌려 놓은 것 같은데...이것들<p>
-      <p>뭔가 힌트가 있는게 확실해!</p>
-      <br>
-      <p>조타륜과 항해일지의 단서를</p>
-      <p>통해, 기타의 시동암호를 얻자.</p>
+      <div class="read-info grey-color">
+        <p>큐브상자 측면에 있는 이미지에서</p>
+        <p>단서를 얻어, 무억을 사용하여</p>
+        <p>탈출할 수 있을지 생각해보자!</p>
+        <br>
       </div>
-        <input id="answer" index=0 oninput="this.value = this.value.toUpperCase();" type="text" class="form-control answer-input" placeholder="정답 입력">
-        <img id="codeBtn" class='next-button answer-e' src="./img/icon/icon_play.svg" alt="">
+
+      <input id="answer" index=6 oninput="this.value = this.value.toUpperCase();" type="text" class="form-control answer-input" placeholder="정답 입력">
+      <img id="codeBtn" class='next-button answer-e' src="./img/icon/icon_play.svg" alt="">
     </div>
   <script src="./js/info.js"></script>
   <script src="./js/stage.js"></script>
