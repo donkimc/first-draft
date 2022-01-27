@@ -153,7 +153,22 @@ body {
 }
 
 .stage-img {
-  width: min(60vw, 25em);
+  width: min(80vw, 25em);
+  margin-bottom: 1em;
+}
+
+
+
+.stage-img-left {
+  width: 8em;
+  margin-bottom: 1em;
+  margin-right: 10em;
+}
+
+.stage-img-right {
+  width: 8em;
+  margin-bottom: 1em;
+  margin-left: 10em;
 }
 
 .ticket-ani {
