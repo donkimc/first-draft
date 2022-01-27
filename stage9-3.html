@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="./css/stage.css">
 </head>
 
-<body class='bg-1 filter-g'>
+<body class='bg-1'>
     <!-- information icon on the top right -->
     <div class="info sml-shadow">
       <a id="infoButton" class='info-button'><img src="./img/icon/icon_info.svg" alt=""></a>
@@ -27,17 +27,25 @@
     <div id="infoModal"></div>
     <!-- main contents includes: logo, code text box, code input and next button -->
     <div class="contents">
-      <div class="read-info grey-color">
-
-        <p>이곳이 목적지인 것 같은데 ...</p>
-        <p>앗, 저게 뭐지?</p>
+      <div class="read-info">
+        <p>마침내 생명의 정수를 손에 넣었군.</p>
         <br>
-        <br>
+        <p>이제 선택을 해야할 때다.</p>
+        <p>위기에 처한 용궁을 구해야할까.</p>
+        <p>아니면...</p>
+        <p>엄마의 병을 고치러 달려갈까...</p>
       </div>
-      <img class='stage-img sml-shadow' src="./img/stage9/sta-9-1.png" alt="">
-      <a class='next-button' href="stage9-2.html">
-        <img src="./img/icon/icon_play.svg" alt="">
+      <img class='stage-img-sml' src="./img/stage9/sta-9-3.png" alt="">
+      <a href="stage-end1.html" style='display: block'>
+        <div class="end-container">
+          <img src="./img/stage_end/ending-btn.png" style="width:min(80vw,20em);">
+          <div class='end-button'><a style='color: #cc66ff'>엔딩1:</a>생명의 정수를 물에 뿌린다.</div>
+        </div>
       </a>
+
+      <!-- <a href="stage9-3.html">
+        <img src="./img/stage_end/ending-btn.png" alt="">
+      </a> -->
     </div>
   <script src="./js/info.js"></script>
 </body>
