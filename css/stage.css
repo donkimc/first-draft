@@ -102,6 +102,7 @@ body {
   position: relative;
   text-align: center;
   font-family: yangjinv09_ttf;
+  font-size: 0.9em;
   color: grey;
 }
 .end-button {
