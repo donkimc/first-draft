@@ -96,7 +96,7 @@ body {
   margin: 0.5em;
   cursor: pointer;
   margin-left: min(50vw, 18em);
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   /* filter: drop-shadow( 0.5rem 0.5rem 0.5rem rgba(0,0,0,0.5) ); */
 }
 .end-container {
