@@ -100,16 +100,29 @@ body {
 }
 .end-container {
   position: relative;
+  display: inline-block;
   text-align: center;
   font-family: yangjinv09_ttf;
   font-size: 0.9em;
   color: grey;
+  /* background-image: url('../img/stage_end/ending-btn.png'); */
+  width:min(90vw,23em);
 }
 .end-button {
   position: absolute;
   top: 50%;
   left: 20px;
   transform: translate(0, -65%);
+
+  /* cursor: pointer; */
+}
+
+.mission-clear-button {
+  position: absolute;
+  top: 50%;
+  left: auto;
+  transform: translate(50%, -65%);
+  font-size: 1.5em;
 }
 /* used in ticket modal */
 .button-loc {
@@ -329,4 +342,9 @@ li{
   100% {
     background-color: black;
   }
+}
+
+button {
+  background-image: url('../img/stage_end/ending-btn.png')
+  border: none;
 }
