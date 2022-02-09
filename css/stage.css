@@ -2,13 +2,13 @@
 html {
   height: 100vh;
 } */
-html {
+/* html {
   height: -webkit-fill-available;
-}
+} */
 
 body {
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
+  height: 100vh;
+  /* min-height: -webkit-fill-available; */
   /* height: calc(var(--vh, 1vh) * 100); */
   /* bottom: 0; */
   /* align-items: center; */
