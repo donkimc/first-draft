@@ -4,7 +4,7 @@ html {
 } */
 
 body {
-  /* height: auto; */
+  height: 100vh;
   /* bottom: 0; */
   /* align-items: center; */
   /* background: rgb(255,255,255); */
@@ -103,6 +103,10 @@ body {
   margin-bottom: 50px;
   /* filter: drop-shadow( 0.5rem 0.5rem 0.5rem rgba(0,0,0,0.5) ); */
 }
+
+.next-button-answer {
+  width: min(20vw, 3em);
+}
 .end-container {
   position: relative;
   display: inline-block;
@@ -137,14 +141,32 @@ body {
 }
 
 #answer {
-  width: min(60vw, 20em);
-  border-radius: 2em;
+  /* width: min(60vw, 20em); */
+  /* border-radius: 2em; */
+}
+
+.answer-box {
+  display: inline-flex;
+  position: relative;
+  /* justify-content: bottom; */
+  align-items: center;
+  flex: 0 0 10%;
+
 }
 
 .answer-input {
-  width: min(75%, 20em);
+  /* width: min(75%, 20em); */
+  /* margin-top: auto; */
+  width: 200px;
   text-align:center;
+  border-radius: 2em;
+  margin-right: 15px
 }
+
+.contents > div:not(:only-child):last-of-type {
+    margin-top: auto;
+}
+
 
 /* hint modal popup css */
 .overlay {
