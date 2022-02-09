@@ -159,6 +159,12 @@ body {
 
 }
 
+.end-buttons {
+  position: relative;
+  align-items: center;
+  flex: 0 0 10%;
+}
+
 .answer-input {
   /* width: min(75%, 20em); */
   /* margin-top: auto; */
