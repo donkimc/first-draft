@@ -13,8 +13,15 @@ $(document).ready(function () {
       // console.log(ans);
       if ($('#answer').val() == data.answers[page_index].answer) {
         console.log('correct');
+        // stage 1
+        if (page_index == 0) {
+          $('#loadingOverlay').css({display: "block"});
+          setTimeout(function(){
+            window.location.href = "./"+data.answers[page_index].page;
+          },4000);
+        }
         //stage 4
-        if (page_index == 3) {
+        else if (page_index == 3) {
           $('#ticketOverlay').css({display: "block"});
         }
         // stage 6
@@ -32,6 +39,10 @@ $(document).ready(function () {
   $('#hintCloseBtn').click(function(){
     $('#hintOverlay').css({display: "none"});
   });
+
+  // stage 1
+
+
 
   // stage 4
   $('#ticketNextBtn').click(function(){
@@ -53,7 +64,6 @@ $(document).ready(function () {
 
       setTimeout(function(){
         window.location.href = "./"+data.answers[page_index].page;
-        console.log('2');
       },4000);
     });
   });
