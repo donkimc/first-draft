@@ -1,5 +1,7 @@
 
 $(function() {
+  let h = window.innerHeight;
+  $('body').css({height: h});
   $('#infoModal').load('./common/info.html');
   $(document).on('click', '#infoButton', function(e) {
     e.preventDefault();
@@ -10,6 +12,7 @@ $(function() {
     $('#infoOverlay').css({display: "none"});
   });
 });
+
 
 // window.addEventListener("load",function() {
 //     setTimeout(function(){
