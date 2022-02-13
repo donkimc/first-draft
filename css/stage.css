@@ -404,7 +404,7 @@ button {
 
 @media screen and (max-height: 800px) {
   .read-info {
-    font-size: min(4vw, 1.1em);
+    font-size: min(3vw, 1.0em);
     margin-top: 0;
     line-height: 0.4em;
   }
