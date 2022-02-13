@@ -104,6 +104,7 @@ body {
   text-align: center;
   font-family: yangjinv09_ttf;
   font-size: min(5vw, 1.5em);
+  /* font-size: 1.5em; */
   line-height: max(1.5vh,0.5em);
   color: #004466;
 }
@@ -399,4 +400,14 @@ li{
 button {
   background-image: url('../img/stage_end/ending-btn.png')
   border: none;
+}
+
+@media screen and (max-height: 690px) {
+  .read-info {
+    font-size: min(3vw, 1.2em);
+  }
+
+  .stage-img {
+    width: min(60vw, 20em);
+  }
 }
