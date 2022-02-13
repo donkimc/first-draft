@@ -404,7 +404,9 @@ button {
 
 @media screen and (max-height: 800px) {
   .read-info {
-    font-size: min(3vw, 1.2em);
+    font-size: min(5vw, 1.3em);
+    margin-top: min(5vw, 1.5em);
+    line-height: 0.4em;
   }
 
   .stage-img {
