@@ -51,8 +51,8 @@
   /* overflow: hidden; */
   /* position: fixed; */
 
-  top: 0.5em;
-  right: 0.5em;
+  top: 0;
+  right: 0;
   width: 100%;
 
 }
@@ -74,7 +74,7 @@
   /* justify-content:flex-start; */
   /* align-content: space-between; */
   flex: 1 auto;
-  padding: 1.5rem;
+  padding: 1rem;
   overflow-y: scroll;
 
 }
