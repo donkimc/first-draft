@@ -402,9 +402,9 @@ button {
   border: none;
 }
 
-@media screen and (max-height: 800px) {
+@media screen and (max-height: 650px) {
   .read-info {
-    font-size: min(3vw, 1.0em);
+    font-size: 1.2em;
     margin-top: 0;
     line-height: 0.4em;
   }
