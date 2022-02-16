@@ -416,7 +416,7 @@ li{
 
 .img-button {
   /* width: min(90vw, 22em); */
-  width: min(80vw, 22em);
+  width: min(90vw, 24em);
 }
 
 @media screen and (max-height: 650px) {
