@@ -173,6 +173,7 @@ body {
 }
 
 .end-buttons {
+  /* display: flex; */
   position: relative;
   align-items: center;
   flex: 0 0 10%;
@@ -397,9 +398,13 @@ li{
   }
 }
 
-button {
+/* button {
   background-image: url('../img/stage_end/ending-btn.png')
   border: none;
+} */
+
+.img-button {
+  width: min(90vw, 25em);
 }
 
 @media screen and (max-height: 650px) {
