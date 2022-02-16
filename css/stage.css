@@ -131,26 +131,37 @@ body {
   display: inline-block;
   text-align: center;
   font-family: yangjinv09_ttf;
-  font-size: 0.9em;
+
   color: grey;
   /* background-image: url('../img/stage_end/ending-btn.png'); */
-  width:min(90vw,23em);
+  /* width:30em; */
 }
 .end-button {
   position: absolute;
   top: 50%;
   left: 20px;
   transform: translate(0, -65%);
+  font-size: 0.9em;
 
   /* cursor: pointer; */
 }
 
 .mission-clear-button {
+  /* position: absolute;
+  top: 50%;
+  /* left: 0; */
+  /* margin-left: auto; */
+  /* transform: translate(50%, -65%); */
+  /* transform: translate(50%, -65%);
+  font-size: 1.3em; */
   position: absolute;
   top: 50%;
-  left: auto;
-  transform: translate(50%, -65%);
-  font-size: 1.5em;
+  left: 0;
+  right: 0;
+  text-align: center;
+  width: 100%;
+  transform: translate(0, -65%);
+
 }
 /* used in ticket modal */
 .button-loc {
@@ -404,7 +415,8 @@ li{
 } */
 
 .img-button {
-  width: min(90vw, 25em);
+  /* width: min(90vw, 22em); */
+  width: min(80vw, 22em);
 }
 
 @media screen and (max-height: 650px) {
@@ -423,4 +435,9 @@ li{
     margin-bottom: 0.5em;
 
   }
+
+  .end-button {
+    font-size: 0.80em;
+  }
+
 }
