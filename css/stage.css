@@ -7,7 +7,7 @@ html {
 } */
 
 body {
-  /* height: 90vh; */
+  max-height: 100vh;
   min-height: -webkit-fill-available;
   /* height: calc(var(--vh, 1vh) * 100); */
   /* bottom: 0; */
@@ -114,17 +114,19 @@ body {
 }
 
 .next-button {
-  width: min(20vw, 3em);
-  padding: 1px;
-  margin: 0.5em;
+  /* width: min(20vw, 3em); */
+  width: 3em;
+  /* padding: 1px; */
+  /* margin: 0.5em; */
   cursor: pointer;
   margin-left: min(50vw, 18em);
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
+  /* bottom: 0; */
   /* filter: drop-shadow( 0.5rem 0.5rem 0.5rem rgba(0,0,0,0.5) ); */
 }
 
 .next-button-answer {
-  width: min(20vw, 3em);
+  width: 3em;
 }
 .end-container {
   position: relative;
@@ -193,7 +195,7 @@ body {
 .answer-input {
   /* width: min(75%, 20em); */
   /* margin-top: auto; */
-  width: 12em;
+  width: 12.5em;
   text-align:center;
   border-radius: 2em;
   margin-right: 0.5em;
