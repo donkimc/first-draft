@@ -25,14 +25,14 @@ body {
 .bg-1 {
   background: url('../img/bg/bg_bottom5.svg') ,linear-gradient(180deg, rgba(255,255,255,1) 32%, rgba(152,190,223,1) 84%);
   background-position: center bottom, center 0px;
-  background-size: 100%, cover;
+  background-size: 100%, contain;
   background-repeat: no-repeat, no-repeat;
 }
 
 .bg-2 {
   background: url('../img/bg/bg_bottom4.svg') ,linear-gradient(180deg, rgba(255,255,255,1) 32%, rgba(152,190,223,1) 84%);
   background-position: center bottom, center 0px;
-  background-size: 100%, cover;
+  background-size: 100%, contain;
   background-repeat: no-repeat, no-repeat;
 }
 
@@ -184,7 +184,6 @@ body {
 }
 
 .answer-box {
-  background-color: red;
   margin-top: auto;
   display: inline-flex;
   position: relative;
