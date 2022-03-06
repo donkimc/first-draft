@@ -184,6 +184,7 @@ body {
 }
 
 .answer-box {
+  background-color: red;
   margin-top: auto;
   display: inline-flex;
   position: relative;
