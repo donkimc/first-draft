@@ -120,19 +120,13 @@ body {
 }
 
 .next-button {
-  /* width: min(20vw, 3em); */
   width: 3em;
-  /* padding: 1px; */
-  /* margin: 0.5em; */
   cursor: pointer;
   margin-left: min(50vw, 18em);
-
-  /* margin-bottom: 50px; */
-  /* bottom: 0; */
   filter: drop-shadow( 0.5rem 0.5rem 0.5rem rgba(0,0,0,0.5) );
-  transition-duration: 0.1s;
+  transition-duration: 0.3s;
 }
-
+/* button animation */
 .next-button:active {
   margin-top: 2px;
   filter: drop-shadow( 0.1rem 0.1rem 0.1rem rgba(0,0,0,0.5) );
@@ -141,8 +135,9 @@ body {
 .next-button-answer {
   width: 3em;
   filter: drop-shadow( 0.5rem 0.5em 0.5em rgba(0,0,0,0.5) );
+  transition-duration: 0.3s;
 }
-
+/* button animation */
 .next-button-answer:active {
   margin-top: 2px;
   filter: drop-shadow( 0.1rem 0.1rem 0.1rem rgba(0,0,0,0.5) );
@@ -168,13 +163,6 @@ body {
 }
 
 .mission-clear-button {
-  /* position: absolute;
-  top: 50%;
-  /* left: 0; */
-  /* margin-left: auto; */
-  /* transform: translate(50%, -65%); */
-  /* transform: translate(50%, -65%);
-  font-size: 1.3em; */
   position: absolute;
   top: 50%;
   left: 0;
@@ -220,13 +208,6 @@ body {
   border-radius: 2em;
   margin-right: 0.5em;
 }
-
-/* .contents > div:not(:only-child):last-of-type {
-    margin-top: auto;
-} */
-
-
-
 
 /* hint modal popup css */
 .overlay {
@@ -292,24 +273,26 @@ body {
   margin-left: 10em;
 }
 
+/* ticket animation stage 4 */
 .ticket-ani {
   position: absoute;
   width: 90%;
-  animation-name: example;
+  animation-name: ticket;
   animation-duration: 4s;
 }
 
+@keyframes ticket {
+  0% {width: 10%;}
+  100% {width: 90%;}
+}
+
+/* stamp animation stage 4 */
 .stamp-ani {
   position: absolute;
   width: 40%;
   top: 20%;
   animation-name: stamp;
   animation-duration: 4s;
-}
-
-@keyframes example {
-  0% {width: 10%;}
-  100% {width: 90%;}
 }
 
 @keyframes stamp {
@@ -380,6 +363,8 @@ li{
   justify-content: center;
 }
 
+
+/* three dots animation */
 .dot {
   position: relative;
   height: 10px;
@@ -430,17 +415,14 @@ li{
     background-color: black;
   }
 }
+/* 3 dots animation code end */
 
-/* button {
-  background-image: url('../img/stage_end/ending-btn.png')
-  border: none;
-} */
 
 .img-button {
-  /* width: min(90vw, 22em); */
   width: min(90vw, 24em);
 }
 
+/* in case when the mobile screen is long */
 @media screen and (max-height: 650px) {
   .read-info {
     font-size: min(5vw, 1.2em);
