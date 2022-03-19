@@ -19,14 +19,6 @@
 </head>
 
 <body class='bg-1'>
-    <!-- background bottom image -->
-    <!-- <div class="bg-bottom">
-        <img src="./img/bg/bg_bottom5.svg">
-    </div> -->
-    <!-- information icon on the top right -->
-    <!-- <div class="info sml-shadow">
-      <a id="infoButton" class='info-button'><img src="./img/icon/icon_info.svg" alt=""></a>
-    </div> -->
     <!-- information modal page -->
     <div id="infoModal"></div>
     <!-- main contents includes: logo, code text box, code input and next button -->
@@ -44,10 +36,10 @@
       <p>기사내용을 읽어보자!</p>
 
       </div>
-      <img class='stage-img sml-shadow' src="./img/stage1/sta-1-1.png" alt="">
+      <img   class='stage-img sml-shadow' src="./img/stage1/sta-1-1.png" alt="">
       <div class="answer-box">
-        <a href="stage1-2.html">
-          <img class='next-button' src="./img/icon/icon_play.svg" alt="">
+        <a onclick="setTimeout(function() {window.location.href='stage1-2.html';},300);">
+          <img id="nextPage" class='next-button' src="./img/icon/icon_play.svg" alt="">
         </a>
       </div>
       <!-- <img class='next-button' src="./img/icon/icon_play.svg" alt=""> -->

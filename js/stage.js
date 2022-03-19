@@ -1,6 +1,8 @@
 
 $(document).ready(function () {
 
+
+
   $('#codeBtn').click(function(e){
     e.preventDefault();
     checkAnswer();
@@ -12,8 +14,12 @@ $(document).ready(function () {
     }
   });
 
+
+
   $('#hintCloseBtn').click(function(){
-    $('#hintOverlay').css({display: "none"});
+    setTimeout(function() {
+      $('#hintOverlay').css({display: "none"});
+    },300);
   });
 
   // stage 4
@@ -52,23 +58,36 @@ function checkAnswer() {
       console.log('correct');
       // stage 1
       if (page_index == 0) {
-        $('#loadingOverlay').css({display: "block"});
+        setTimeout(function() {
+          $('#loadingOverlay').css({display: "block"});
+        },300);
         setTimeout(function(){
           window.location.href = "./"+data.answers[page_index].page;
         },4000);
       }
       //stage 4
       else if (page_index == 3) {
-        $('#ticketOverlay').css({display: "block"});
+        setTimeout(function() {
+          $('#ticketOverlay').css({display: "block"});
+        },300);
+
       }
       // stage 6
       else if (page_index == 5) {
-        $('#dangerOverlay').css({display: "block"});
+        setTimeout(function() {
+          $('#dangerOverlay').css({display: "block"});
+        },300);
       } else {
-        window.location.href = "./"+data.answers[page_index].page;
+        // button animation runs for 0.3s
+        setTimeout(function() {
+          window.location.href = "./"+data.answers[page_index].page;
+        },300);
+
       }
     } else {
-      $('#hintOverlay').css({display: "block"});
+      setTimeout(function() {
+        $('#hintOverlay').css({display: "block"});
+      },300);
     }
   });
 }
