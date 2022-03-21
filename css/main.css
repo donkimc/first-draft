@@ -41,6 +41,8 @@
 
 .btn-shadow {
   filter: drop-shadow(0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5));
+  -webkit-tap-highlight-color : transparent;
+  outline: none;
 }
 
 .sml-shadow {
@@ -161,8 +163,4 @@
 
 .str {
   font-family: 'NanumSquareRoundEB';
-}
-
-.btn {
-  -webkit-tap-highlight-color : transparent;
 }

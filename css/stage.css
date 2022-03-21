@@ -120,10 +120,14 @@ body {
 }
 
 .next-button {
-  width: 3em;
+  /* background: none; */
+  width: 6em;
   cursor: pointer;
   margin-left: min(50vw, 18em);
   filter: drop-shadow( 0.5rem 0.5rem 0.5rem rgba(0,0,0,0.5) );
+  border: 1.5em solid transparent;
+  /* border-radius: 4px; */
+
   transition-duration: 0.3s;
 }
 /* button animation */
@@ -133,9 +137,10 @@ body {
 }
 
 .next-button-answer {
-  width: 3em;
+  width: 6em;
   filter: drop-shadow( 0.5rem 0.5em 0.5em rgba(0,0,0,0.5) );
   transition-duration: 0.3s;
+  border: 1.5em solid transparent;
 }
 /* button animation */
 .next-button-answer:active {
