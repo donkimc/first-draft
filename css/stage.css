@@ -127,9 +127,16 @@ body {
   filter: drop-shadow( 0.5rem 0.5rem 0.5rem rgba(0,0,0,0.5) );
   border: 1.5em solid transparent;
   transition-duration: 0.3s;
+
 }
 /* button animation */
 .next-button:active {
+  margin-top: 2px;
+  filter: drop-shadow( 0.1rem 0.1rem 0.1rem rgba(0,0,0,0.5) );
+}
+
+/* button animation */
+.next-button:focus {
   margin-top: 2px;
   filter: drop-shadow( 0.1rem 0.1rem 0.1rem rgba(0,0,0,0.5) );
 }
@@ -142,6 +149,11 @@ body {
 }
 /* button animation */
 .next-button-answer:active {
+  margin-top: 2px;
+  filter: drop-shadow( 0.1rem 0.1rem 0.1rem rgba(0,0,0,0.5) );
+}
+/* button animation */
+.next-button-answer:focus {
   margin-top: 2px;
   filter: drop-shadow( 0.1rem 0.1rem 0.1rem rgba(0,0,0,0.5) );
 }
