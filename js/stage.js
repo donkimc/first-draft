@@ -19,7 +19,7 @@ $(document).ready(function () {
   $('#hintCloseBtn').click(function(){
     setTimeout(function() {
       $('#hintOverlay').css({display: "none"});
-    },300);
+    },600);
   });
 
   // stage 4
@@ -60,7 +60,7 @@ function checkAnswer() {
       if (page_index == 0) {
         setTimeout(function() {
           $('#loadingOverlay').css({display: "block"});
-        },300);
+        },600);
         setTimeout(function(){
           window.location.href = "./"+data.answers[page_index].page;
         },4000);
@@ -69,25 +69,25 @@ function checkAnswer() {
       else if (page_index == 3) {
         setTimeout(function() {
           $('#ticketOverlay').css({display: "block"});
-        },300);
+        },600);
 
       }
       // stage 6
       else if (page_index == 5) {
         setTimeout(function() {
           $('#dangerOverlay').css({display: "block"});
-        },300);
+        },600);
       } else {
-        // button animation runs for 0.3s
+        // button animation runs for 0.6s
         setTimeout(function() {
           window.location.href = "./"+data.answers[page_index].page;
-        },300);
+        },600);
 
       }
     } else {
       setTimeout(function() {
         $('#hintOverlay').css({display: "block"});
-      },300);
+      },600);
     }
   });
 }

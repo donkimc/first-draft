@@ -162,3 +162,7 @@
 .str {
   font-family: 'NanumSquareRoundEB';
 }
+
+.btn {
+  -webkit-tap-highlight-color : transparent;
+}
