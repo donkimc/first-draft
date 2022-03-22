@@ -460,7 +460,7 @@ li{
 
 }
 
-@media screen and (max-height: 800px) {
+@media screen and (max-height: 700px) {
   .sml-font {
     font-size: 0.5em;
     margin: 0.4em;
