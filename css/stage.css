@@ -440,9 +440,10 @@ li{
 /* in case when the mobile screen is short */
 @media screen and (max-height: 600px) {
   .read-info {
-    font-size: min(5vw, 1.2em);
-    margin-top: 0;
+    font-size: min(4.5vw, 1.1em);
+    margin-top: 0.1em;
     line-height: 0.4em;
+    margin-bottom: 0;
   }
 
   .stage-img {
