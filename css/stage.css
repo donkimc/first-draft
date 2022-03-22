@@ -204,6 +204,7 @@ body {
   display: inline-flex;
   position: relative;
   align-items: center;
+  margin-left: 2em; /*added to align the elements */
   flex: 0 0 10%;
   /* transition-duration: 1s; */
 }
@@ -221,7 +222,7 @@ body {
   width: 12.5em;
   text-align:center;
   border-radius: 2em;
-  margin-right: 0.5em;
+  /* margin-right: 0.5em; */
 }
 
 /* hint modal popup css */
