@@ -458,6 +458,9 @@ li{
     font-size: 0.70em;
   }
 
+  .sml-screen {
+    display: none;
+  }
 }
 
 @media screen and (max-height: 700px) {
