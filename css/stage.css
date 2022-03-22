@@ -455,6 +455,14 @@ li{
     margin-bottom: 0.5em;
   }
 
+  .stage-img-left {
+      width: 5em;
+  }
+
+  .stage-img-right {
+      width: 5em;
+  }
+
   .end-button {
     font-size: 0.70em;
   }
@@ -464,10 +472,10 @@ li{
   }
 }
 
-@media screen and (max-height: 700px) {
+@media screen and (max-height: 650px) {
   .sml-font {
-    font-size: 0.5em;
-    margin: 0.4em;
+    font-size: 0.8em;
+    margin: 0.6em;
     font-family: 'NanumSquareRoundR'
   }
 }
