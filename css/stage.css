@@ -267,7 +267,7 @@ body {
 }
 
 .stage-img {
-  width: min(60vw, 15em);
+  width: min(50vw, 15em);
   margin-bottom: 1em;
 }
 
