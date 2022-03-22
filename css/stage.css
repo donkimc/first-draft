@@ -441,13 +441,12 @@ li{
 @media screen and (max-height: 600px) {
   .read-info {
     font-size: min(4.5vw, 1.1em);
-    margin-top: 0.1em;
+    margin: 0;
     line-height: 0.4em;
-    margin-bottom: 0;
   }
 
   .stage-img {
-    width: min(55vw, 20em);
+    width: min(50vw, 20em);
   }
 
   .stage-img-sml {
