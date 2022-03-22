@@ -437,8 +437,8 @@ li{
   width: min(90vw, 24em);
 }
 
-/* in case when the mobile screen is long */
-@media screen and (max-height: 650px) {
+/* in case when the mobile screen is short */
+@media screen and (max-height: 600px) {
   .read-info {
     font-size: min(5vw, 1.2em);
     margin-top: 0;
@@ -446,7 +446,7 @@ li{
   }
 
   .stage-img {
-    width: min(40vw, 20em);
+    width: min(50vw, 20em);
   }
 
   .stage-img-sml {
