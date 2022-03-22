@@ -267,7 +267,7 @@ body {
 }
 
 .stage-img {
-  width: min(60vw, 20em);
+  width: min(60vw, 25em);
   margin-bottom: 1em;
 }
 
@@ -446,7 +446,7 @@ li{
   }
 
   .stage-img {
-    width: min(50vw, 20em);
+    width: min(55vw, 20em);
   }
 
   .stage-img-sml {
