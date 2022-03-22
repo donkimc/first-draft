@@ -452,7 +452,12 @@ li{
   .stage-img-sml {
     width: min(25vw, 5em);
     margin-bottom: 0.5em;
+  }
 
+  .sml-font {
+    font-size: 0.5em;
+    margin: 0.4em;
+    font-family: 'NanumSquareRoundR'
   }
 
   .end-button {
