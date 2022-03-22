@@ -267,7 +267,7 @@ body {
 }
 
 .stage-img {
-  width: min(80vw, 25em);
+  width: min(60vw, 15em);
   margin-bottom: 1em;
 }
 
@@ -450,7 +450,7 @@ li{
   }
 
   .stage-img-sml {
-    width: min(250vw, 5em);
+    width: min(25vw, 5em);
     margin-bottom: 0.5em;
 
   }
@@ -460,3 +460,5 @@ li{
   }
 
 }
+
+/* in case when the mobile screen is short */
