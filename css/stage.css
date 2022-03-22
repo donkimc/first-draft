@@ -454,16 +454,18 @@ li{
     margin-bottom: 0.5em;
   }
 
+  .end-button {
+    font-size: 0.70em;
+  }
+
+}
+
+@media screen and (max-height: 800px) {
   .sml-font {
     font-size: 0.5em;
     margin: 0.4em;
     font-family: 'NanumSquareRoundR'
   }
-
-  .end-button {
-    font-size: 0.70em;
-  }
-
 }
 
 /* in case when the mobile screen is short */
