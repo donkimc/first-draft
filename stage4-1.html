@@ -19,62 +19,62 @@
 </head>
 
 <body ontouchstart class='bg-2'>
-    <!-- information modal page -->
-    <div id="infoModal"></div>
+  <!-- information modal page -->
+  <div id="infoModal"></div>
 
-    <!-- hint modal page -->
-    <div id="hintOverlay" class="overlay">
-      <div class="overlay-content hint-overlay">
-        <div class="close-btn">
-          <!-- x button &times -->
-          <a id='hintCloseBtn'><img src="./img/icon/icon_delete.svg" alt=""></a>
-        </div>
-        <div class="img-top-hint">
-          <img src="./img/icon/icon_hint.svg" alt="">
-        </div>
-        <div class="img-bottom-hint">
-          <img src="./img/bg/bg_hinticon.svg" alt="">
-        </div>
-        <div class="box-description">
-          <p>흰색책은 자음 ㅇ, 검은색 책은 모음중 ㅡ,</p>
-          <p>녹색책은 모음 중 ㅣ 를 의미합니다.</p>
-          <p>그리고 누워져 있는 책은 모음 역시</p>
-          <p>같은 방향으로 눕혀주시면 됩니다.</p>
-          <p style='color: red;'>* A를 한글로 써보세요. </p>
-          <br>
-        </div>
+  <!-- hint modal page -->
+  <div id="hintOverlay" class="overlay">
+    <div class="overlay-content hint-overlay">
+      <div class="close-btn">
+        <!-- x button &times -->
+        <a id='hintCloseBtn'><img src="./img/icon/icon_delete.svg" alt=""></a>
+      </div>
+      <div class="img-top-hint">
+        <img src="./img/icon/icon_hint.svg" alt="">
+      </div>
+      <div class="img-bottom-hint">
+        <img src="./img/bg/bg_hinticon.svg" alt="">
+      </div>
+      <div class="box-description">
+        <p>흰색책은 자음 ㅇ, 검은색 책은 모음중 ㅡ,</p>
+        <p>녹색책은 모음 중 ㅣ 를 의미합니다.</p>
+        <p>그리고 누워져 있는 책은 모음 역시</p>
+        <p>같은 방향으로 눕혀주시면 됩니다.</p>
+        <p style='color: red;'>* A를 한글로 써보세요. </p>
+        <br>
       </div>
     </div>
+  </div>
 
-    <!-- ticket modal page -->
-    <div id="ticketOverlay" class="overlay">
-      <div class="overlay-content ticket-overlay">
-        <img class='ticket-ani' src="./img/stage4/sta-4-3.png" alt="">
-        <img class='stamp-ani' src="./img/stage4/sta-4-4.svg" alt="">
-        <img id="ticketNextBtn" class='next-button button-loc' src="./img/icon/icon_play.svg" alt="">
-      </div>
+  <!-- ticket modal page -->
+  <div id="ticketOverlay" class="overlay">
+    <div class="overlay-content ticket-overlay">
+      <img class='ticket-ani' src="./img/stage4/sta-4-3.png" alt="">
+      <img class='stamp-ani' src="./img/stage4/sta-4-4.svg" alt="">
+      <img id="ticketNextBtn" class='next-button button-loc' src="./img/icon/icon_play.svg" alt="">
     </div>
+  </div>
 
-    <!-- main contents includes: logo, code text box, code input and next button -->
-    <div class="contents">
-      <!-- information icon on the top right -->
-      <div class="info sml-shadow">
-        <a id="infoButton" class='info-button'><img src="./img/icon/icon_info.svg" alt=""></a>
-      </div>
-      <div class="read-info">
+  <!-- main contents includes: logo, code text box, code input and next button -->
+  <div class="contents">
+    <!-- information icon on the top right -->
+    <div class="info sml-shadow">
+      <a id="infoButton" class='info-button'><img src="./img/icon/icon_info.svg" alt=""></a>
+    </div>
+    <div class="read-info">
       <p>아래의 그림을 참고하여,</p>
       <p>열린 상자 안에 놓인 책의 종류를</p>
       <p>확인하고, 그것이 뜻하는 의미를</p>
       <p>파악해 용궁행 티켓을 획득하라!</p>
       <br>
-      </div>
-      <img class='stage-img sml-shadow' src="./img/stage4/sta-4-1.png" alt="">
-      <br>
-      <div class="answer-box">
-        <input id="answer" index=3 oninput="this.value = this.value.toUpperCase();" type="text" class="form-control answer-input" placeholder="정답 입력">
-        <img id="codeBtn" class='next-button-answer' src="./img/icon/icon_play.svg" alt="">
-      </div>
     </div>
+    <img class='stage-img sml-shadow' src="./img/stage4/sta-4-1.png" alt="">
+    <br>
+    <div class="answer-box">
+      <input id="answer" index=3 oninput="this.value = this.value.toUpperCase();" type="text" class="form-control answer-input" placeholder="정답 입력">
+      <img id="codeBtn" class='next-button-answer' src="./img/icon/icon_play.svg" alt="">
+    </div>
+  </div>
   <script src="./js/info.js"></script>
   <script src="./js/stage.js"></script>
 </body>

@@ -3,18 +3,24 @@
 @charset "EUC-KR";
 
 @font-face {
-    font-family: 'NanumSquareRoundEB'; /*a name to be used later*/
-    src: url('../fonts/NanumSquareRoundEB.ttf'); /*URL to font*/
+  font-family: 'NanumSquareRoundEB';
+  /*a name to be used later*/
+  src: url('../fonts/NanumSquareRoundEB.ttf');
+  /*URL to font*/
 }
 
 @font-face {
-    font-family: 'NanumSquareRoundR'; /*a name to be used later*/
-    src: url('../fonts/NanumSquareRoundR.ttf'); /*URL to font*/
+  font-family: 'NanumSquareRoundR';
+  /*a name to be used later*/
+  src: url('../fonts/NanumSquareRoundR.ttf');
+  /*URL to font*/
 }
 
 @font-face {
-    font-family: 'yangjinv09_ttf'; /*a name to be used later*/
-    src: url('../fonts/yangjinv09_ttf.ttf'); /*URL to font*/
+  font-family: 'yangjinv09_ttf';
+  /*a name to be used later*/
+  src: url('../fonts/yangjinv09_ttf.ttf');
+  /*URL to font*/
 }
 
 .bg-container {
@@ -29,7 +35,6 @@
 
 .bg-box {
   width: 100%;
-  /* height: 100vh; */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom fixed;
@@ -39,7 +44,7 @@
 
 .btn-shadow {
   filter: drop-shadow(0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5));
-  -webkit-tap-highlight-color : transparent;
+  -webkit-tap-highlight-color: transparent;
   outline: none;
 }
 
@@ -51,7 +56,6 @@
   top: 0;
   right: 0;
   width: 100%;
-
 }
 
 .info-button {
@@ -99,12 +103,12 @@
 .info-overlay {
   background: linear-gradient(180deg, rgba(255, 255, 255, 1) 29%, rgba(203, 243, 249, 1) 100%);
   position: absolute;
-  top:0;
+  top: 0;
   right: 0;
 }
 
 .close-btn {
-  top:2vh;
+  top: 2vh;
   right: 3vw;
   color: #ccc;
   position: absolute;

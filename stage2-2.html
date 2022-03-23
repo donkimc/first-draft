@@ -19,43 +19,37 @@
 </head>
 
 <body ontouchstart class='bg-2'>
-    <!-- background bottom image -->
-    <!-- <div class="bg-bottom">
-        <img src="./img/bg/bg_bottom4.svg">
-    </div> -->
+  <!-- information modal page -->
+  <div id="infoModal"></div>
 
-
-    <!-- information modal page -->
-    <div id="infoModal"></div>
-
-    <!-- hint modal page -->
-    <div id="hintOverlay" class="overlay">
-      <div class="overlay-content hint-overlay">
-        <div class="close-btn">
-          <!-- x button &times -->
-          <a id='hintCloseBtn'><img src="./img/icon/icon_delete.svg" alt=""></a>
-        </div>
-        <div class="img-top-hint">
-          <img src="./img/icon/icon_hint.svg" alt="">
-        </div>
-        <div class="img-bottom-hint">
-          <img src="./img/bg/bg_hinticon.svg" alt="">
-        </div>
-        <div class="box-description box-center">
-          <p>별주부전엔 거북이가 아닌</p>
-          <p>자라가 나와요 !</p>
-          <br>
-        </div>
+  <!-- hint modal page -->
+  <div id="hintOverlay" class="overlay">
+    <div class="overlay-content hint-overlay">
+      <div class="close-btn">
+        <!-- x button &times -->
+        <a id='hintCloseBtn'><img src="./img/icon/icon_delete.svg" alt=""></a>
+      </div>
+      <div class="img-top-hint">
+        <img src="./img/icon/icon_hint.svg" alt="">
+      </div>
+      <div class="img-bottom-hint">
+        <img src="./img/bg/bg_hinticon.svg" alt="">
+      </div>
+      <div class="box-description box-center">
+        <p>별주부전엔 거북이가 아닌</p>
+        <p>자라가 나와요 !</p>
+        <br>
       </div>
     </div>
+  </div>
 
-    <!-- main contents includes: logo, code text box, code input and next button -->
-    <div class="contents">
-      <!-- information icon on the top right -->
-      <div class="info sml-shadow">
-        <a id="infoButton" class='info-button'><img src="./img/icon/icon_info.svg" alt=""></a>
-      </div>
-      <div class="read-info">
+  <!-- main contents includes: logo, code text box, code input and next button -->
+  <div class="contents">
+    <!-- information icon on the top right -->
+    <div class="info sml-shadow">
+      <a id="infoButton" class='info-button'><img src="./img/icon/icon_info.svg" alt=""></a>
+    </div>
+    <div class="read-info">
       <p>Q. 필요한 변장도구를 찾아주세요.</p>
       <br>
       <p class="sml-font">(힌트- 별주부전의 이야기를 잘 떠올려 주세요!)</p>
@@ -68,12 +62,12 @@
         <li>자라 등껍질</li>
       </ol>
 
-      </div>
-      <div class="answer-box">
-        <input id="answer" index=1 type="number" class="form-control answer-input" placeholder="정답 입력">
-        <img id="codeBtn" class='next-button-answer' src="./img/icon/icon_play.svg" alt="">
-      </div>
     </div>
+    <div class="answer-box">
+      <input id="answer" index=1 type="number" class="form-control answer-input" placeholder="정답 입력">
+      <img id="codeBtn" class='next-button-answer' src="./img/icon/icon_play.svg" alt="">
+    </div>
+  </div>
   <script src="./js/info.js"></script>
   <script src="./js/stage.js"></script>
 </body>

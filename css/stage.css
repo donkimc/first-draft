@@ -1,26 +1,24 @@
-
 body {
   height: 100vh;
   max-height: -webkit-fill-available;
 }
 
 .bg-1 {
-  background: url('../img/bg/bg_bottom5.svg') ,linear-gradient(180deg, rgba(255,255,255,1) 32%, rgba(152,190,223,1) 84%);
+  background: url('../img/bg/bg_bottom5.svg'), linear-gradient(180deg, rgba(255, 255, 255, 1) 32%, rgba(152, 190, 223, 1) 84%);
   background-position: center bottom, center 0px;
   background-size: 100%, contain;
   background-repeat: no-repeat, no-repeat;
 }
 
 .bg-2 {
-  background: url('../img/bg/bg_bottom4.svg') ,linear-gradient(180deg, rgba(255,255,255,1) 32%, rgba(152,190,223,1) 84%);
+  background: url('../img/bg/bg_bottom4.svg'), linear-gradient(180deg, rgba(255, 255, 255, 1) 32%, rgba(152, 190, 223, 1) 84%);
   background-position: center bottom, center 0px;
   background-size: 100%, contain;
   background-repeat: no-repeat, no-repeat;
 }
 
-
-.filter {
-}
+/* grey filter on backgroun */
+.filter {}
 
 .filter:before {
   content: "";
@@ -30,15 +28,12 @@ body {
   left: 0;
   right: 0;
   background: black;
-  /* background-image: linear-gradient(70deg, rgba(173,173,173,1) 5%, rgba(0,0,0,1) 60%); */
   opacity: 0.65;
   z-index: -1;
 }
 
-
 /* gradient filter */
-.filter-g {
-}
+.filter-g {}
 
 .filter-g:before {
   content: "";
@@ -47,7 +42,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: linear-gradient(70deg, rgba(173,173,173,1) 5%, rgba(0,0,0,1) 60%);
+  background-image: linear-gradient(70deg, rgba(173, 173, 173, 1) 5%, rgba(0, 0, 0, 1) 60%);
   opacity: 0.65;
   z-index: -1;
 }
@@ -58,7 +53,6 @@ body {
   top: 10vh;
   left: 30vw;
   z-index: -3;
-
 }
 
 .bg-center {
@@ -74,10 +68,21 @@ body {
 }
 
 @keyframes fish {
-  0% {transform: translateX(50em);}
-  50% {transform: translateX(0em);}
-  51% {transform: scaleX(-1);}
-  100% {transform: translateX(50em) scaleX(-1);}
+  0% {
+    transform: translateX(50em);
+  }
+
+  50% {
+    transform: translateX(0em);
+  }
+
+  51% {
+    transform: scaleX(-1);
+  }
+
+  100% {
+    transform: translateX(50em) scaleX(-1);
+  }
 }
 
 .read-info {
@@ -85,8 +90,7 @@ body {
   text-align: center;
   font-family: yangjinv09_ttf;
   font-size: min(5vw, 1.5em);
-  /* font-size: 1.5em; */
-  line-height: max(1.5vh,0.5em);
+  line-height: max(1.5vh, 0.5em);
   color: #004466;
 }
 
@@ -95,61 +99,59 @@ body {
 }
 
 .next-button {
-  /* background: none; */
   width: 6em;
   cursor: pointer;
   margin-left: min(50vw, 18em);
-  filter: drop-shadow( 0.5rem 0.5rem 0.5rem rgba(0,0,0,0.5) );
+  filter: drop-shadow(0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5));
   border: 1.5em solid transparent;
   transition-duration: 0.3s;
-
 }
+
 /* button animation */
 .next-button:active {
   margin-top: 2px;
-  filter: drop-shadow( 0.1rem 0.1rem 0.1rem rgba(0,0,0,0.5) );
+  filter: drop-shadow(0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.5));
 }
 
 /* button animation */
 .next-button:focus {
   margin-top: 2px;
-  filter: drop-shadow( 0.1rem 0.1rem 0.1rem rgba(0,0,0,0.5) );
+  filter: drop-shadow(0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.5));
 }
 
 .next-button-answer {
   width: 6em;
-  filter: drop-shadow( 0.5rem 0.5em 0.5em rgba(0,0,0,0.5) );
+  filter: drop-shadow(0.5rem 0.5em 0.5em rgba(0, 0, 0, 0.5));
   transition-duration: 0.3s;
   border: 1.5em solid transparent;
 }
+
 /* button animation */
 .next-button-answer:active {
   margin-top: 2px;
-  filter: drop-shadow( 0.1rem 0.1rem 0.1rem rgba(0,0,0,0.5) );
+  filter: drop-shadow(0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.5));
 }
+
 /* button animation */
 .next-button-answer:focus {
   margin-top: 2px;
-  filter: drop-shadow( 0.1rem 0.1rem 0.1rem rgba(0,0,0,0.5) );
+  filter: drop-shadow(0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.5));
 }
+
 .end-container {
   position: relative;
   display: inline-block;
   text-align: center;
   font-family: yangjinv09_ttf;
-
   color: grey;
-  /* background-image: url('../img/stage_end/ending-btn.png'); */
-  /* width:30em; */
 }
+
 .end-button {
   position: absolute;
   top: 50%;
   left: 20px;
   transform: translate(0, -65%);
   font-size: 0.85em;
-
-  /* cursor: pointer; */
 }
 
 .mission-clear-button {
@@ -160,8 +162,8 @@ body {
   text-align: center;
   width: 100%;
   transform: translate(0, -65%);
-
 }
+
 /* used in ticket modal */
 .button-loc {
   position: absolute;
@@ -170,8 +172,6 @@ body {
 }
 
 #answer {
-  /* width: min(60vw, 20em); */
-  /* border-radius: 2em; */
 }
 
 .answer-box {
@@ -179,25 +179,20 @@ body {
   display: inline-flex;
   position: relative;
   align-items: center;
-  margin-left: 2em; /*added to align the elements */
+  margin-left: 2em;
   flex: 0 0 10%;
-  /* transition-duration: 1s; */
 }
 
 .end-buttons {
-  /* display: flex; */
   position: relative;
   align-items: center;
   flex: 0 0 10%;
 }
 
 .answer-input {
-  /* width: min(75%, 20em); */
-  /* margin-top: auto; */
   width: 12.5em;
-  text-align:center;
+  text-align: center;
   border-radius: 2em;
-  /* margin-right: 0.5em; */
 }
 
 /* hint modal popup css */
@@ -208,7 +203,6 @@ body {
   width: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.5);
-
 }
 
 .overlay:target {
@@ -273,8 +267,13 @@ body {
 }
 
 @keyframes ticket {
-  0% {width: 10%;}
-  100% {width: 90%;}
+  0% {
+    width: 10%;
+  }
+
+  100% {
+    width: 90%;
+  }
 }
 
 /* stamp animation stage 4 */
@@ -287,12 +286,21 @@ body {
 }
 
 @keyframes stamp {
-  0% {opacity: 0;}
-  90% {opacity: 0;}
-  100% {opacity: 0.4;}
+  0% {
+    opacity: 0;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0.4;
+  }
 }
+
 .close-btn {
-  top:2vh;
+  top: 2vh;
   right: 3vw;
   color: #ccc;
   position: absolute;
@@ -320,7 +328,7 @@ body {
 .img-top-hint {
   position: absolute;
   /* margin-botom: -10px; */
-  top:  2.5em;
+  top: 2.5em;
   /* top: 2.5em; */
   left: 2em;
   width: 8em;
@@ -338,8 +346,8 @@ body {
   font-family: 'NanumSquareRoundR'
 }
 
-li{
-    margin-top: 1.5em;
+li {
+  margin-top: 1.5em;
 }
 
 .dot-display {
@@ -354,7 +362,6 @@ li{
   justify-content: center;
 }
 
-
 /* three dots animation */
 .dot {
   position: relative;
@@ -362,7 +369,6 @@ li{
   width: 10px;
   background-color: white;
   border-radius: 50%;
-
   animation: wait 3.5s infinite alternate;
   animation-delay: 1.5s
 }
@@ -377,7 +383,6 @@ li{
   width: 10px;
   background-color: white;
   border-radius: 50%;
-
   animation: wait 3.5s infinite alternate;
   animation-delay: 2.5s
 }
@@ -392,7 +397,6 @@ li{
   width: 10px;
   background-color: white;
   border-radius: 50%;
-
   animation: wait 3.5s infinite alternate;
   animation-delay: 0.5s
 }
@@ -401,14 +405,14 @@ li{
   0% {
     background-color: black;
   }
+
   50%,
   100% {
     background-color: black;
   }
 }
+
 /* 3 dots animation code end */
-
-
 .img-button {
   width: min(90vw, 24em);
 }
@@ -431,11 +435,11 @@ li{
   }
 
   .stage-img-left {
-      width: 5em;
+    width: 5em;
   }
 
   .stage-img-right {
-      width: 5em;
+    width: 5em;
   }
 
   .end-button {

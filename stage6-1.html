@@ -19,71 +19,68 @@
 </head>
 
 <body ontouchstart class='bg-2'>
-    <!-- background bottom image -->
 
+  <!-- information modal page -->
+  <div id="infoModal"></div>
 
-
-    <!-- information modal page -->
-    <div id="infoModal"></div>
-
-    <!-- hint modal page -->
-    <div id="hintOverlay" class="overlay">
-      <div class="overlay-content hint-overlay">
-        <div class="close-btn">
-          <!-- x button &times -->
-          <a id='hintCloseBtn'><img src="./img/icon/icon_delete.svg" alt=""></a>
-        </div>
-        <div class="img-top-hint">
-          <img src="./img/icon/icon_hint.svg" alt="">
-        </div>
-        <div class="img-bottom-hint">
-          <img src="./img/bg/bg_hinticon.svg" alt="">
-        </div>
-        <div class="box-description box-center">
-          <p>정답은 산호입니다.</p>
-          <br>
-        </div>
+  <!-- hint modal page -->
+  <div id="hintOverlay" class="overlay">
+    <div class="overlay-content hint-overlay">
+      <div class="close-btn">
+        <!-- x button &times -->
+        <a id='hintCloseBtn'><img src="./img/icon/icon_delete.svg" alt=""></a>
       </div>
-    </div>
-
-    <!-- danger modal page -->
-    <div id="dangerOverlay" class="overlay">
-      <div class="overlay-content danger-overlay">
-        <div class="read-info" style='color: red'>
-          <p >어딜가려구,</p>
-          <p>우리가 정말 순순히 보내줄 줄 알았어?</p>
-          <p>(퍽)</p>
-        </div>
-        <!-- <img class='stage-img' src="./img/stage4/sta-4-2.png" alt=""> -->
-
-        <img id="dangerBtn" class='next-button button-loc' src="./img/icon/icon_play.svg" alt="">
+      <div class="img-top-hint">
+        <img src="./img/icon/icon_hint.svg" alt="">
       </div>
-    </div>
-
-    <!-- dot display -->
-    <div id="dotDisplay" class="dot-display">
-      <div class="dot"></div>
-    </div>
-
-    <!-- main contents includes: logo, code text box, code input and next button -->
-    <div class="contents">
-      <div class="info sml-shadow">
-        <a id="infoButton" class='info-button'><img src="./img/icon/icon_info.svg" alt=""></a>
+      <div class="img-bottom-hint">
+        <img src="./img/bg/bg_hinticon.svg" alt="">
       </div>
-      <div class="read-info">
-        <p>흠, 제법이군</p>
-        <p>어디 이것도 맞출 수 있나 볼까?</p>
-        <br>
-        <br>
+      <div class="box-description box-center">
+        <p>정답은 산호입니다.</p>
         <br>
       </div>
+    </div>
+  </div>
+
+  <!-- danger modal page -->
+  <div id="dangerOverlay" class="overlay">
+    <div class="overlay-content danger-overlay">
+      <div class="read-info" style='color: red'>
+        <p>어딜가려구,</p>
+        <p>우리가 정말 순순히 보내줄 줄 알았어?</p>
+        <p>(퍽)</p>
+      </div>
+      <!-- <img class='stage-img' src="./img/stage4/sta-4-2.png" alt=""> -->
+
+      <img id="dangerBtn" class='next-button button-loc' src="./img/icon/icon_play.svg" alt="">
+    </div>
+  </div>
+
+  <!-- dot display -->
+  <div id="dotDisplay" class="dot-display">
+    <div class="dot"></div>
+  </div>
+
+  <!-- main contents includes: logo, code text box, code input and next button -->
+  <div class="contents">
+    <div class="info sml-shadow">
+      <a id="infoButton" class='info-button'><img src="./img/icon/icon_info.svg" alt=""></a>
+    </div>
+    <div class="read-info">
+      <p>흠, 제법이군</p>
+      <p>어디 이것도 맞출 수 있나 볼까?</p>
       <br>
-      <div class="answer-box">
-        <input id="answer" index=5 oninput="this.value = this.value.toUpperCase();" type="text" class="form-control answer-input" placeholder="정답 입력">
-        <img  id="codeBtn" class='next-button-answer' src="./img/icon/icon_play.svg" alt="">
-        <!-- <img id="codeBtn" class='next-button' src="./img/icon/icon_play.svg" alt=""> -->
-      </div>
+      <br>
+      <br>
     </div>
+    <br>
+    <div class="answer-box">
+      <input id="answer" index=5 oninput="this.value = this.value.toUpperCase();" type="text" class="form-control answer-input" placeholder="정답 입력">
+      <img id="codeBtn" class='next-button-answer' src="./img/icon/icon_play.svg" alt="">
+      <!-- <img id="codeBtn" class='next-button' src="./img/icon/icon_play.svg" alt=""> -->
+    </div>
+  </div>
   <script src="./js/info.js"></script>
   <script src="./js/stage.js"></script>
 </body>

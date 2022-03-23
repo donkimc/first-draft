@@ -19,60 +19,56 @@
 </head>
 
 <body ontouchstart class='bg-2'>
-    <!-- background bottom image -->
-    <!-- <div class="bg-bottom">
-        <img src="./img/bg/bg_bottom4.svg">
-    </div> -->
 
+  <!-- information modal page -->
+  <div id="infoModal"></div>
 
-    <!-- information modal page -->
-    <div id="infoModal"></div>
-
-    <!-- hint modal page -->
-    <div id="hintOverlay" class="overlay">
-      <div class="overlay-content hint-overlay">
-        <div class="close-btn">
-          <!-- x button &times -->
-          <a id='hintCloseBtn'><img src="./img/icon/icon_delete.svg" alt=""></a>
-        </div>
-        <div class="img-top-hint">
-          <img src="./img/icon/icon_hint.svg" alt="">
-        </div>
-        <div class="img-bottom-hint">
-          <img src="./img/bg/bg_hinticon.svg" alt="">
-        </div>
-        <div class="box-description box-center">
-          <p>정답은 의자입니다.</p>
-          <br>
-        </div>
+  <!-- hint modal page -->
+  <div id="hintOverlay" class="overlay">
+    <div class="overlay-content hint-overlay">
+      <div class="close-btn">
+        <!-- x button &times -->
+        <a id='hintCloseBtn'><img src="./img/icon/icon_delete.svg" alt=""></a>
+      </div>
+      <div class="img-top-hint">
+        <img src="./img/icon/icon_hint.svg" alt="">
+      </div>
+      <div class="img-bottom-hint">
+        <img src="./img/bg/bg_hinticon.svg" alt="">
+      </div>
+      <div class="box-description box-center">
+        <p>정답은 의자입니다.</p>
+        <br>
       </div>
     </div>
+  </div>
 
-    <!-- main contents includes: logo, code text box, code input and next button -->
-    <div class="contents">
-      <div class="info sml-shadow">
-        <a id="infoButton" class='info-button'><img src="./img/icon/icon_info.svg" alt=""></a>
-      </div>
-      <div class="read-info">
-        <p>기차에서 내려 생명의 정수가 있을 </p>
-        <p>곳을 탐색하던 도중, 골목길에서 돌연변이 </p>
-        <p>바다 생물들이 내 앞을 막아서며 말했다.</p>
-        <br>
-        <p>-<p>
-        <p>"우리가 내는 문제를 풀어야 이곳을</p>
-        <p>지나갈 수 있다. 두 가지 문제를 내지.</p>
-        <p>어디 한번 맞춰봐!""</p>
-        <br>
-        <p class="sml-font" style='color: red;'>* 골목길이 그려진 큐브상자 앞으로 가서 </p>
-        <p class="sml-font" style='color: red;'>돌연변이들이 주시하고 있는</p>
-        <p class="sml-font" style='color: red;'>물체의 명칭을 알아맞춰보세요. </p>
-      </div>
+  <!-- main contents includes: logo, code text box, code input and next button -->
+  <div class="contents">
+    <div class="info sml-shadow">
+      <a id="infoButton" class='info-button'><img src="./img/icon/icon_info.svg" alt=""></a>
+    </div>
+    <div class="read-info">
+      <p>기차에서 내려 생명의 정수가 있을 </p>
+      <p>곳을 탐색하던 도중, 골목길에서 돌연변이 </p>
+      <p>바다 생물들이 내 앞을 막아서며 말했다.</p>
       <br>
-      <div class="answer-box">
+      <p>-
+      <p>
+      <p>"우리가 내는 문제를 풀어야 이곳을</p>
+      <p>지나갈 수 있다. 두 가지 문제를 내지.</p>
+      <p>어디 한번 맞춰봐!""</p>
+      <br>
+      <p class="sml-font" style='color: red;'>* 골목길이 그려진 큐브상자 앞으로 가서 </p>
+      <p class="sml-font" style='color: red;'>돌연변이들이 주시하고 있는</p>
+      <p class="sml-font" style='color: red;'>물체의 명칭을 알아맞춰보세요. </p>
+    </div>
+    <br>
+    <div class="answer-box">
       <input id="answer" index=4 oninput="this.value = this.value.toUpperCase();" type="text" class="form-control answer-input" placeholder="정답 입력">
       <img id="codeBtn" class='next-button-answer' src="./img/icon/icon_play.svg" alt="">
     </div>
-    </div>
+  </div>
   <script src="./js/info.js"></script>
   <script src="./js/stage.js"></script>
 </body>

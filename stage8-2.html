@@ -20,48 +20,47 @@
 
 <body ontouchstart class='bg-2 filter'>
 
+  <!-- information modal page -->
+  <div id="infoModal"></div>
 
-    <!-- information modal page -->
-    <div id="infoModal"></div>
-
-    <!-- hint modal page -->
-    <div id="hintOverlay" class="overlay">
-      <div class="overlay-content hint-overlay">
-        <div class="close-btn">
-          <!-- x button &times -->
-          <a id='hintCloseBtn'><img src="./img/icon/icon_delete.svg" alt=""></a>
-        </div>
-        <div class="img-top-hint">
-          <img src="./img/icon/icon_hint.svg" alt="">
-        </div>
-        <div class="img-bottom-hint">
-          <img src="./img/bg/bg_hinticon.svg" alt="">
-        </div>
-        <div class="box-description box-center">
-          <p>알파벳순서대로 경로에 있는 방</p>
-          <p>(동서남북 순서)에 대한 개수를 각</p>
-          <p>더한 값을 나열해주세요.</p>
-        </div>
+  <!-- hint modal page -->
+  <div id="hintOverlay" class="overlay">
+    <div class="overlay-content hint-overlay">
+      <div class="close-btn">
+        <!-- x button &times -->
+        <a id='hintCloseBtn'><img src="./img/icon/icon_delete.svg" alt=""></a>
+      </div>
+      <div class="img-top-hint">
+        <img src="./img/icon/icon_hint.svg" alt="">
+      </div>
+      <div class="img-bottom-hint">
+        <img src="./img/bg/bg_hinticon.svg" alt="">
+      </div>
+      <div class="box-description box-center">
+        <p>알파벳순서대로 경로에 있는 방</p>
+        <p>(동서남북 순서)에 대한 개수를 각</p>
+        <p>더한 값을 나열해주세요.</p>
       </div>
     </div>
-    <!-- main contents includes: logo, code text box, code input and next button -->
-    <div class="contents">
-      <!-- information icon on the top right -->
-      <div class="info sml-shadow">
-        <a id="infoButton" class='info-button'><img src="./img/icon/icon_info.svg" alt=""></a>
-      </div>
-      <div class="read-info grey-color">
-        <p>안내도를 보고 물음표까지</p>
-        <p>가는 경로를 확인하세요!</p>
-        <p>동서남북 순서대로 정답을 입력해주세요.</p>
-        <br>
-      </div>
-      <img class='stage-img' src="./img/stage8/sta-8-3.png" alt="">
-      <div class="answer-box">
+  </div>
+  <!-- main contents includes: logo, code text box, code input and next button -->
+  <div class="contents">
+    <!-- information icon on the top right -->
+    <div class="info sml-shadow">
+      <a id="infoButton" class='info-button'><img src="./img/icon/icon_info.svg" alt=""></a>
+    </div>
+    <div class="read-info grey-color">
+      <p>안내도를 보고 물음표까지</p>
+      <p>가는 경로를 확인하세요!</p>
+      <p>동서남북 순서대로 정답을 입력해주세요.</p>
+      <br>
+    </div>
+    <img class='stage-img' src="./img/stage8/sta-8-3.png" alt="">
+    <div class="answer-box">
       <input id="answer" index=7 oninput="this.value = this.value.toUpperCase();" type=number class="form-control answer-input" placeholder="정답 입력">
       <img id="codeBtn" class='next-button-answer' src="./img/icon/icon_play.svg" alt="">
     </div>
-    </div>
+  </div>
   <script src="./js/info.js"></script>
   <script src="./js/stage.js"></script>
 </body>

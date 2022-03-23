@@ -19,65 +19,65 @@
 </head>
 
 <body ontouchstart class='bg-2'>
+  <!-- information modal page -->
+  <div id="infoModal"></div>
 
-
-    <!-- information modal page -->
-    <div id="infoModal"></div>
-
-    <!-- hint modal page -->
-    <div id="hintOverlay" class="overlay">
-      <div class="overlay-content hint-overlay">
-        <div class="close-btn">
-          <!-- x button &times -->
-          <a id='hintCloseBtn'><img src="./img/icon/icon_delete.svg" alt=""></a>
-        </div>
-        <div class="img-top-hint">
-          <img src="./img/icon/icon_hint.svg" alt="">
-        </div>
-        <div class="img-bottom-hint">
-          <img src="./img/bg/bg_hinticon.svg" alt="">
-        </div>
-        <div class="box-description box-center">
-          <p>별의 '710-17'이 의미하는 것은</p>
-          <p>별의 '기억'입니다.</p>
-        </div>
+  <!-- hint modal page -->
+  <div id="hintOverlay" class="overlay">
+    <div class="overlay-content hint-overlay">
+      <div class="close-btn">
+        <!-- x button &times -->
+        <a id='hintCloseBtn'><img src="./img/icon/icon_delete.svg" alt=""></a>
+      </div>
+      <div class="img-top-hint">
+        <img src="./img/icon/icon_hint.svg" alt="">
+      </div>
+      <div class="img-bottom-hint">
+        <img src="./img/bg/bg_hinticon.svg" alt="">
+      </div>
+      <div class="box-description box-center">
+        <p>별의 '710-17'이 의미하는 것은</p>
+        <p>별의 '기억'입니다.</p>
       </div>
     </div>
-    <!-- main contents includes: logo, code text box, code input and next button -->
-    <div class="contents">
-      <!-- information icon on the top right -->
-      <div class="info sml-shadow">
-        <a id="infoButton" class='info-button'><img src="./img/icon/icon_info.svg" alt=""></a>
-      </div>
-      <div class="read-info">
-        <p>놓인 책들 중 아래 그림에 해당되는</p>
-        <p>책을 유심히 살펴본후, 네모칸에 들어갈</p>
-        <p>알맞은 문구를 입력해 주세요.</p>
-        <br>
-        <p class="sml-font" style='color: red;'>* 이번 문제는 하단 링트에 연결된 페이지 </p>
-        <p class="sml-font" style='color: red;'>문제의 정답을 입력해 주셔야 합니다.</p>
-        <p class="sml-font" style='color: red;'>그리고 다시 지금 페이지로 넘어와 </p>
-        <p class="sml-font" style='color: red;'>다음페이지로 이동하세요</p>
-
-      </div>
-      <img class='stage-img sml-shadow' src="./img/stage3/sta-3-2.png" alt="">
-      <div>
-        <a href="http://dev.sherlock-holmes.co.kr/test_city_circus.heitu">연결된 페이지</a>
-        <a id="answer" index=2>/</a>
-        <a id="hint" href="#">힌트</a>
-      </div>
-
-      <!-- <input id="answer" value=2 oninput="this.value = this.value.toUpperCase();" type="text" class="form-control answer-input" placeholder="정답 입력"> -->
-      <div class="answer-box">
-        <img id="codeBtn" class='next-button answer-e' src="./img/icon/icon_play.svg" alt="">
-      </div>
+  </div>
+  <!-- main contents includes: logo, code text box, code input and next button -->
+  <div class="contents">
+    <!-- information icon on the top right -->
+    <div class="info sml-shadow">
+      <a id="infoButton" class='info-button'><img src="./img/icon/icon_info.svg" alt=""></a>
     </div>
+    <div class="read-info">
+      <p>놓인 책들 중 아래 그림에 해당되는</p>
+      <p>책을 유심히 살펴본후, 네모칸에 들어갈</p>
+      <p>알맞은 문구를 입력해 주세요.</p>
+      <br>
+      <p class="sml-font" style='color: red;'>* 이번 문제는 하단 링트에 연결된 페이지 </p>
+      <p class="sml-font" style='color: red;'>문제의 정답을 입력해 주셔야 합니다.</p>
+      <p class="sml-font" style='color: red;'>그리고 다시 지금 페이지로 넘어와 </p>
+      <p class="sml-font" style='color: red;'>다음페이지로 이동하세요</p>
+
+    </div>
+    <img class='stage-img sml-shadow' src="./img/stage3/sta-3-2.png" alt="">
+    <div>
+      <a href="http://dev.sherlock-holmes.co.kr/test_city_circus.heitu">연결된 페이지</a>
+      <a id="answer" index=2>/</a>
+      <a id="hint" href="#">힌트</a>
+    </div>
+
+    <!-- <input id="answer" value=2 oninput="this.value = this.value.toUpperCase();" type="text" class="form-control answer-input" placeholder="정답 입력"> -->
+    <div class="answer-box">
+      <img id="codeBtn" class='next-button answer-e' src="./img/icon/icon_play.svg" alt="">
+    </div>
+  </div>
   <script src="./js/info.js"></script>
   <script src="./js/stage.js"></script>
   <script>
-      $("#hint").click(function() {
-        $('#hintOverlay').css({display: "block"});
+    $("#hint").click(function() {
+      $('#hintOverlay').css({
+        display: "block"
       });
+    });
   </script>
 </body>
 

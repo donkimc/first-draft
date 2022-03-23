@@ -1,6 +1,5 @@
-$(document).ready(function () {
-
-  $('#codeBtn').click(function(e){
+$(document).ready(function() {
+  $('#codeBtn').click(function(e) {
     e.preventDefault();
     checkCode();
   });
@@ -11,7 +10,7 @@ $(document).ready(function () {
     }
   });
 
-  $('#startBtn').click(function(e){
+  $('#startBtn').click(function(e) {
     e.preventDefault();
     window.location.href = "./stage1-1.html";
   });
@@ -23,10 +22,11 @@ function checkCode() {
   if (code == '181818') {
     console.log('correct');
     window.location.href = "./start.html";
-  }
-  else {
+  } else {
     $('#codeError').html(txtErr);
-    setTimeout(function(){$('#codeError').html("")},3000);
+    setTimeout(function() {
+      $('#codeError').html("")
+    }, 3000);
     $("#codeInput").val("")
   }
 }

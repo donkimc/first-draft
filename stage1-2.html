@@ -19,57 +19,53 @@
 </head>
 
 <body ontouchstart class='bg-2'>
-    <!-- background bottom image -->
-    <!-- <div class="bg-bottom">
-        <img src="./img/bg/bg_bottom4.svg">
-    </div> -->
-    <div class="bg-middle">
-      <img src="./img/clip/stage1_middle.svg" alt="">
-    </div>
-    <div class="bg-center">
-      <img class='run-fish' src="./img/clip/fish1.svg" alt="">
-    </div>
+  <div class="bg-middle">
+    <img src="./img/clip/stage1_middle.svg" alt="">
+  </div>
+  <div class="bg-center">
+    <img class='run-fish' src="./img/clip/fish1.svg" alt="">
+  </div>
 
-    <!-- information modal page -->
-    <div id="infoModal"></div>
+  <!-- information modal page -->
+  <div id="infoModal"></div>
 
-    <!-- hint modal page -->
-    <div id="hintOverlay" class="overlay">
-      <div class="overlay-content hint-overlay">
-        <div class="close-btn">
-          <!-- x button &times -->
-          <a id='hintCloseBtn'><img src="./img/icon/icon_delete.svg" alt=""></a>
-        </div>
-        <div class="img-top-hint">
-          <img src="./img/icon/icon_hint.svg" alt="">
-        </div>
-        <div class="img-bottom-hint">
-          <img src="./img/bg/bg_hinticon.svg" alt="">
-        </div>
-        <div class="box-description">
-          <p>향해일지에 적힌 시간을 날짜 순서대로</p>
-          <p>나열 후 조타륜에 적힌 시계 모양대로</p>
-          <p>시침, 분침, 초침을 대입해 보세요</p>
-          <br>
-        </div>
+  <!-- hint modal page -->
+  <div id="hintOverlay" class="overlay">
+    <div class="overlay-content hint-overlay">
+      <div class="close-btn">
+        <!-- x button &times -->
+        <a id='hintCloseBtn'><img src="./img/icon/icon_delete.svg" alt=""></a>
+      </div>
+      <div class="img-top-hint">
+        <img src="./img/icon/icon_hint.svg" alt="">
+      </div>
+      <div class="img-bottom-hint">
+        <img src="./img/bg/bg_hinticon.svg" alt="">
+      </div>
+      <div class="box-description">
+        <p>향해일지에 적힌 시간을 날짜 순서대로</p>
+        <p>나열 후 조타륜에 적힌 시계 모양대로</p>
+        <p>시침, 분침, 초침을 대입해 보세요</p>
+        <br>
       </div>
     </div>
+  </div>
 
-    <!-- loading modal page -->
-    <div id="loadingOverlay" class="overlay">
-      <div class="overlay-content ticket-overlay">
-        <img src="./img/stage1/sta-1-2.gif" alt="">
+  <!-- loading modal page -->
+  <div id="loadingOverlay" class="overlay">
+    <div class="overlay-content ticket-overlay">
+      <img src="./img/stage1/sta-1-2.gif" alt="">
 
-      </div>
     </div>
+  </div>
 
-    <!-- main contents includes: logo, code text box, code input and next button -->
-    <div class="contents">
-      <!-- information icon on the top right -->
-      <div class="info sml-shadow">
-        <a id="infoButton" class='info-button'><img src="./img/icon/icon_info.svg" alt=""></a>
-      </div>
-      <div class="read-info">
+  <!-- main contents includes: logo, code text box, code input and next button -->
+  <div class="contents">
+    <!-- information icon on the top right -->
+    <div class="info sml-shadow">
+      <a id="infoButton" class='info-button'><img src="./img/icon/icon_info.svg" alt=""></a>
+    </div>
+    <div class="read-info">
       <p>생명의 정수를 구해야겠다.</p>
       <br>
       <p>배가 부서져 있으니</p>
@@ -80,18 +76,19 @@
       <br>
       <p>저쪽에 망가진 조타륜과</p>
       <p>누군가 일부러 날개의 항해일지를</p>
-      <p>흩뿌려 놓은 것 같은데...이것들<p>
+      <p>흩뿌려 놓은 것 같은데...이것들
+      <p>
       <p>뭔가 힌트가 있는게 확실해!</p>
       <br>
       <p>조타륜과 항해일지의 단서를</p>
       <p>통해, 기타의 시동암호를 얻자.</p>
-      </div>
-      <div class="answer-box">
-        <input id="answer" index=0 oninput="this.value = this.value.toUpperCase();" type="text" class="form-control answer-input" placeholder="정답 입력">
-        <img id="codeBtn" class='next-button-answer' src="./img/icon/icon_play.svg" alt="">
-      </div>
-
     </div>
+    <div class="answer-box">
+      <input id="answer" index=0 oninput="this.value = this.value.toUpperCase();" type="text" class="form-control answer-input" placeholder="정답 입력">
+      <img id="codeBtn" class='next-button-answer' src="./img/icon/icon_play.svg" alt="">
+    </div>
+
+  </div>
   <script src="./js/info.js"></script>
   <script src="./js/stage.js"></script>
 </body>
