@@ -1,5 +1,4 @@
 /* declair local fonts */
-
 /* @charset "UTF-8"; */
 @charset "EUC-KR";
 
@@ -17,7 +16,6 @@
     font-family: 'yangjinv09_ttf'; /*a name to be used later*/
     src: url('../fonts/yangjinv09_ttf.ttf'); /*URL to font*/
 }
-
 
 .bg-container {
   position: fixed;
@@ -50,8 +48,6 @@
 }
 
 .info {
-  /* overflow: hidden; */
-  /* position: fixed; */
   top: 0;
   right: 0;
   width: 100%;
@@ -67,25 +63,10 @@
 .contents {
   height: 90%;
   max-height: -webkit-fill-available;
-  /* height: calc(var(--vh, 1vh) * 100); */
-  /* height: 100vh; */
-  /* max-height: -webkit-fill-available; */
-  /* height: min(80%, 800px); */
-  /* height: min(75%, 800px); */
-  /* height: 100vh; */
-  /* width: 100%; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
-  /* justify-content: space-between; */
-  /* justify-content:flex-start; */
-  /* align-content: space-between; */
-
-  /* flex: 1 auto; */
   padding: 1rem;
-  /* overflow-y: scroll; */
-
 }
 
 /* modal popup css */
@@ -101,12 +82,8 @@
 
 .overlay-content {
   background-color: #f4f4f4;
-
-  /* float: right; */
   margin: 0 0 0 0;
   padding: 20px;
-  /* width: min(100%, 25em);
-  height: min(80%, 25em); */
   width: min(100%, 25em);
   height: 25em;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
@@ -116,7 +93,6 @@
   align-items: center;
   border-radius: 10px;
   background: rgb(255, 255, 255);
-
   position: relative;
 }
 
@@ -155,10 +131,6 @@
   padding: 1em;
   border-width: medium;
   font-family: 'NanumSquareRoundR';
-}
-
-#codeError {
-  display: block;
 }
 
 .str {

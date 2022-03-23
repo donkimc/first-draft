@@ -1,25 +1,7 @@
-/*
-html {
-  height: 100vh;
-} */
-/* html {
-  height: -webkit-fill-available;
-} */
 
 body {
   height: 100vh;
   max-height: -webkit-fill-available;
-  /* height: 100%; */
-  /* height: calc(100vh - calc(100vh - 100%)); */
-  /* height: calc(var(--vh, 1vh) * 100); */
-  /* bottom: 0; */
-  /* align-items: center; */
-  /* background: rgb(255,255,255); */
-  /* overflow: hidden; */
-  /* margin: 0;
-  background-size: cover;
-    background-repeat: no-repeat;
-    overflow: auto; */
 }
 
 .bg-1 {
@@ -38,8 +20,8 @@ body {
 
 
 .filter {
-  /* backdrop-filter: brightness(30%); */
 }
+
 .filter:before {
   content: "";
   position: absolute;
@@ -69,13 +51,6 @@ body {
   opacity: 0.65;
   z-index: -1;
 }
-
-/* .bg-bottom {
-  position: fixed;
-  width: 100%;
-  bottom: -5vh;
-  z-index: -1;
-} */
 
 .bg-middle {
   position: fixed;

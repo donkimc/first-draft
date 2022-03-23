@@ -9,7 +9,6 @@ body {
   overflow: hidden;
 }
 
-
 /* contents css */
 .logo-image {
   width: min(80%, 25em);
@@ -53,4 +52,8 @@ body {
   margin: 1em;
   cursor: pointer;
   -webkit-filter: drop-shadow( 0px 0px 0px rgba(0,0,0,0) );
+}
+
+#codeError {
+  display: block;
 }
