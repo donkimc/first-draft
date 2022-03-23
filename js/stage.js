@@ -57,7 +57,6 @@ function checkAnswer() {
   $.getJSON("./answers.json", function(data) {
 
     if ($('#answer').val() == data.answers[page_index].answer) {
-      console.log('correct');
       // stage 1
       if (page_index == 0) {
         setTimeout(function() {
