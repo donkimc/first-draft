@@ -12,7 +12,7 @@ $(document).ready(function() {
 
   $('#startBtn').click(function(e) {
     e.preventDefault();
-    window.location.href = "./stage1-1.html";
+    window.location.href = "./stage1-1";
   });
 });
 
@@ -21,7 +21,7 @@ function checkCode() {
   var code = $('#codeInput').val();
   if (code == '181818') {
     console.log('correct');
-    window.location.href = "./start.html";
+    window.location.href = "./start";
   } else {
     $('#codeError').html(txtErr);
     setTimeout(function() {
